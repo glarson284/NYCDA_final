@@ -68,6 +68,8 @@ interact('.dropzone').dropzone({
     event.relatedTarget.classList.remove('can-drop');
   },
   ondrop: function (event) {
+    event.relatedTarget.style.backgroundColor = "transparent"
+    event.relatedTarget.classList.remove('draggable');
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback

@@ -15,16 +15,16 @@ img {
 }
 
 #circ {
-  width: 70%;
-  z-index: -1;
+  width: 50%;
+  position: absolute;
+  // top: 50%;
+  left: 25%;
 }
 #outer-dropzone {
-  height: 140px;
+  height: 160px;
+  width: 210px;
 }
 
-#inner-dropzone {
-  height: 80px;
-}
 
 .dropzone {
   background-color: #ccc;
@@ -49,9 +49,10 @@ img {
 .drag-drop {
   display: inline-block;
   min-width: 40px;
-  padding: 2em 0.5em;
+  padding: 5px;
+  border-radius: 5px;
 
-  color: #fff;
+  // color: #fff;
   background-color: transparent;
 
   -webkit-transform: translate(0px, 0px);
@@ -62,23 +63,7 @@ img {
 
 .drag-drop.can-drop {
   color: #000;
-  background-color: red;
+  background-color: orange;
 
 }
 
-
-#grid-snap {
-  width: 40%;
-  background-color: #29e;
-  color: #fff;
-  font-size: 1.2em;
-  border-radius: 4px;
-  padding: 2%;
-  margin: 5%;
-}
-.live-demo {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    background-color: #e8e9e8;
-}
