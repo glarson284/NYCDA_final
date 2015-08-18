@@ -2,23 +2,83 @@
 @import "base/base";
 @import "neat/neat";
 
-div {
-  // height: 300px;
-  // width: 800px;
-}
-#drag-1 {
-  width: 40%;
-  height: 200%;
-  min-height: 6.5em;
-  margin: 10%;
 
-  background-color: #29e;
-  color: white;
-
-  border-radius: 0.75em;
-  padding: 4%;
-
+#wrapper {
+  height: 100%;
+  width: 100%;
+  background: lightblue;
 }
 img {
+  width: 200px;
+  height: 100%;
+
+}
+
+#circ {
+  width: 70%;
+  z-index: -1;
+}
+#outer-dropzone {
+  height: 140px;
+}
+
+#inner-dropzone {
+  height: 80px;
+}
+
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 80%;
+  transition: background-color 0.3s;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: pink;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  padding: 2em 0.5em;
+
+  color: #fff;
+  background-color: transparent;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: red;
+
+}
+
+
+#grid-snap {
   width: 40%;
+  background-color: #29e;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 4px;
+  padding: 2%;
+  margin: 5%;
+}
+.live-demo {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    background-color: #e8e9e8;
 }
