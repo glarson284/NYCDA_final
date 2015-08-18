@@ -1,0 +1,24 @@
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+div {
+  // height: 300px;
+  // width: 800px;
+}
+#drag-1 {
+  width: 40%;
+  height: 200%;
+  min-height: 6.5em;
+  margin: 10%;
+
+  background-color: #29e;
+  color: white;
+
+  border-radius: 0.75em;
+  padding: 4%;
+
+}
+img {
+  width: 40%;
+}
