@@ -1,12 +1,23 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
+@import 'mixins';
 
-
-#wrapper {
-  height: 100%;
-  width: 100%;
+body {
   background: lightblue;
+  height: 900px;
+  width: 1450px;
+
+}
+#wrapper {
+  border: 1px solid black;
+}
+.outer-dropzones{
+  background: url("/assets/circuit2.svg") no-repeat center center;
+  // background-size: cover;
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
 }
 img {
   width: 200px;
@@ -16,21 +27,29 @@ img {
 
 #circ {
   width: 50%;
-  position: absolute;
   // top: 50%;
-  left: 25%;
+  left: 30%;
+  z-index: -1;
 }
-#outer-dropzone {
-  height: 160px;
-  width: 210px;
+#outer-dropzone1 {
+  @include outer-dropzone;
+  // margin-top: 100px;
 }
-
+#outer-dropzone2 {
+  @include outer-dropzone;
+  margin-top: 110px;
+}
+#outer-dropzone3 {
+  @include outer-dropzone;
+  margin-top: 160px;
+}
 
 .dropzone {
+  // position: absolute;
   background-color: #ccc;
   border: dashed 4px transparent;
   border-radius: 4px;
-  margin: 10px auto 30px;
+  margin: 10px auto 30px auto;
   padding: 10px;
   width: 80%;
   transition: background-color 0.3s;
