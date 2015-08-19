@@ -13,11 +13,12 @@ body {
   border: 1px solid black;
 }
 .outer-dropzones{
-  background: url("/assets/circuit2.svg") no-repeat center center;
+  background: url("/assets/circuit2-02.svg") no-repeat center center;
   // background-size: cover;
   width: 700px;
-  height: 450px;
+  height: 550px;
   margin: 0 auto;
+  background-size: 425px;
 }
 img {
   width: 200px;
@@ -33,20 +34,21 @@ img {
 }
 #outer-dropzone1 {
   @include outer-dropzone;
-  // margin-top: 100px;
+  margin-top: 20px;
 }
 #outer-dropzone2 {
   @include outer-dropzone;
-  margin-top: 110px;
+  margin-top: 160px;
 }
 #outer-dropzone3 {
   @include outer-dropzone;
   margin-top: 160px;
+  height: 100px;
 }
 
 .dropzone {
   // position: absolute;
-  background-color: #ccc;
+  // background-color: #ccc;
   border: dashed 4px transparent;
   border-radius: 4px;
   margin: 10px auto 30px auto;
@@ -60,9 +62,12 @@ img {
 }
 
 .drop-target {
-  background-color: pink;
   border-color: #fff;
   border-style: solid;
+  // background-color: #ccc;
+}
+.dropped-target {
+  background-color: transparent;
 }
 
 .drag-drop {
@@ -82,7 +87,7 @@ img {
 
 .drag-drop.can-drop {
   color: #000;
-  background-color: orange;
+  background-color: rgba(240, 30, 255, .4);
 
 }
 
