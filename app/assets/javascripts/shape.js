@@ -4,7 +4,7 @@ interact('.draggable')
     inertia: true,
     // keep the element within the area of it's parent
     restrict: {
-      // restriction: "parent",
+      restriction: "body",
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
@@ -89,15 +89,18 @@ dropzone('.res_dropzone_first','.resistor');
 
 $(function() {
   $('.resistor').click(function() {
-    $('.batt_test').css('display', 'none');
-    $('.res_text').find("h2").fadeIn(2000).css('display', 'initial');
-    $('.res_text').find("p").fadeIn(4000).css('display', 'initial');
+    $('.bat_text').find("h2").css('display', 'none');
+    $('.bat_text').find("p").css('display', 'none');
+    $('.init_text').css('display','none');
+    $('.res_text').find("h2").fadeIn(1000).css('display', 'initial');
+    $('.res_text').find("p").fadeIn(2000).css('display', 'initial');
   });
-
-   $('.battery').click(function() {
-    $('.res').css('display', 'none');
-    $('.bat_text').find("h2").fadeIn(2000).css('display', 'initial');
-    $('.bat_text').find("p").fadeIn(4000).css('display', 'initial');
+  $('.battery').click(function() {
+    $('.res_text').find("h2").css('display', 'none');
+    $('.res_text').find("p").css('display', 'none');
+    $('.init_text').css('display','none');
+    $('.bat_text').find("h2").fadeIn(1000).css('display', 'initial');
+    $('.bat_text').find("p").fadeIn(2000).css('display', 'initial');
   });
 })
 

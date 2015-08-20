@@ -6,10 +6,13 @@
 body {
   background: grey;
   height: 900px;
-  width: 1450px;
+  width: 1400px;
 
 }
-
+.outer h2 {
+  font-size: 40px;
+  text-align: center;
+}
 .clear {
   height: 100px;
 }
@@ -47,7 +50,7 @@ img {
 }
 #outer-dropzone4 {
   @include outer-dropzone;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 #outer-dropzone5 {
   @include outer-dropzone;
@@ -80,16 +83,35 @@ img {
 }
 
 .learning_first {
-  @include shift(1);
+  // @include shift(1);
   @include span-columns(2);
+  margin-left: 50px;
   height: 500px;
   border-radius: 10px;
   background-color: pink;
+  padding: 0px 10px;
 
 }
 .res_text h2{
   display: none;
+  font-size: 30px;
 }
 .res_text p {
   display: none;
 }
+.bat_text h2{
+  display: none;
+  font-size: 30px;
+}
+.bat_text p {
+  display: none;
+}
+.init_text h2{
+  font-size: 40px;
+}
+
+#start_res {
+  box-shadow: 0px 0px 30px red;
+  border-radius: 3px;
+}
+
