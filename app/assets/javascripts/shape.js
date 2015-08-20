@@ -48,7 +48,7 @@ interact(drop).dropzone({
   // only accept elements matching this CSS selector
   accept: classname, 
   // Require a 75% element overlap for a drop to be possible
-  overlap: .80,
+  overlap: .75,
 
   // listen for drop related events:
 
@@ -79,10 +79,12 @@ interact(drop).dropzone({
     event.target.classList.remove('drop-target');
     event.target.classList.add('dropped-target');
   }
-  
+
 });
 }
 dropzone('.res_dropzone','.resistor');
 dropzone('.battery_dropzone','.battery');
+dropzone('.battery_dropzone_first','.battery');
+dropzone('.res_dropzone_first','.resistor');
 
 
