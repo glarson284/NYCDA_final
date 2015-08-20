@@ -15,10 +15,15 @@
 @import "base/base";
 @import "neat/neat";
 @import 'main';
-
-
+@import 'nav';
+@import 'first';
+@import 'interact';
 
 html {
   height: 900px;
   width: 1200px;
+}
+
+* {
+  margin: 0;
 }

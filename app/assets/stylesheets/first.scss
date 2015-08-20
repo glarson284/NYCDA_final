@@ -13,8 +13,8 @@ body {
 .clear {
   height: 100px;
 }
-.outer-dropzones{
-  background: url("/assets/circuit2-02.svg") no-repeat center center;
+.outer-dropzones_first{
+  background: url("/assets/circuit1.svg") no-repeat center center;
   // background-size: cover;
   width: 700px;
   height: 550px;
@@ -45,21 +45,17 @@ img {
   left: 30%;
   z-index: -1;
 }
-#outer-dropzone1 {
+#outer-dropzone4 {
   @include outer-dropzone;
-  margin-top: 5px;
+  margin-top: 120px;
 }
-#outer-dropzone2 {
+#outer-dropzone5 {
   @include outer-dropzone;
-  margin-top: 160px;
-}
-#outer-dropzone3 {
-  @include outer-dropzone;
-  margin-top: 145px;
+  margin-top: 140px;
   height: 130px;
 }
 
-.res_dropzone, .battery_dropzone {
+.res_dropzone_first, .battery_dropzone_first {
   // position: absolute;
   // background-color: #ccc;
   border: dashed 4px transparent;
@@ -69,6 +65,7 @@ img {
   width: 80%;
   transition: background-color 0.3s;
 }
+
 
 .droppings {
   background-color: lightgrey;
@@ -81,11 +78,8 @@ img {
   @include span-columns(2);
   height: 500px;
 }
-#border {
-  height: 20px;
-  background-color: grey;
-}
-.learning {
+
+.learning_first {
   @include shift(1);
   @include span-columns(2);
   height: 500px;

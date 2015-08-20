@@ -4,7 +4,7 @@ interact('.draggable')
     inertia: true,
     // keep the element within the area of it's parent
     restrict: {
-      restriction: "parent",
+      // restriction: "parent",
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
@@ -42,11 +42,13 @@ interact('.draggable')
   window.dragMoveListener = dragMoveListener;
 
 
-interact('.dropzone').dropzone({
+function dropzone(drop, classname){
+
+interact(drop).dropzone({
   // only accept elements matching this CSS selector
-  accept: '#yes-drop',
+  accept: classname, 
   // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  overlap: .75,
 
   // listen for drop related events:
 
@@ -68,14 +70,21 @@ interact('.dropzone').dropzone({
     event.relatedTarget.classList.remove('can-drop');
   },
   ondrop: function (event) {
+    event.relatedTarget.style.backgroundColor = "transparent"
+    event.relatedTarget.classList.remove('draggable');
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
     event.target.classList.remove('drop-active');
     event.target.classList.remove('drop-target');
+    event.target.classList.add('dropped-target');
   }
+
 });
-
-
+}
+dropzone('.res_dropzone','.resistor');
+dropzone('.battery_dropzone','.battery');
+dropzone('.battery_dropzone_first','.battery');
+dropzone('.res_dropzone_first','.resistor');
 
 
