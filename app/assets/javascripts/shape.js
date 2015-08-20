@@ -42,11 +42,13 @@ interact('.draggable')
   window.dragMoveListener = dragMoveListener;
 
 
-interact('.dropzone').dropzone({
+function dropzone(drop, classname){
+
+interact(drop).dropzone({
   // only accept elements matching this CSS selector
-  accept: '#yes-drop',
+  accept: classname, 
   // Require a 75% element overlap for a drop to be possible
-  overlap: 0.55,
+  overlap: .80,
 
   // listen for drop related events:
 
@@ -77,8 +79,10 @@ interact('.dropzone').dropzone({
     event.target.classList.remove('drop-target');
     event.target.classList.add('dropped-target');
   }
+  
 });
-
-
+}
+dropzone('.res_dropzone','.resistor');
+dropzone('.battery_dropzone','.battery');
 
 

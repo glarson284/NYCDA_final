@@ -46,19 +46,19 @@ img {
 }
 #outer-dropzone1 {
   @include outer-dropzone;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 #outer-dropzone2 {
   @include outer-dropzone;
-  margin-top: 160px;
+  margin-top: 155px;
 }
 #outer-dropzone3 {
   @include outer-dropzone;
-  margin-top: 160px;
-  height: 100px;
+  margin-top: 155px;
+  height: 120px;
 }
 
-.dropzone {
+.res_dropzone, .battery_dropzone {
   // position: absolute;
   // background-color: #ccc;
   border: dashed 4px transparent;
@@ -115,4 +115,10 @@ img {
 #border {
   height: 20px;
   background-color: grey;
+}
+.learning {
+  @include span-columns(3);
+  height: 200px;
+  background-color: grey;
+
 }
