@@ -4,7 +4,7 @@
 @import 'mixins';
 
 body {
-  background: lightblue;
+  background: grey;
   height: 900px;
   width: 1450px;
 
@@ -19,6 +19,18 @@ body {
   height: 550px;
   margin: 0 auto;
   background-size: 425px;
+  // background-color: lightblue;
+  border-radius: 20px;
+  display: inline-block;
+
+}
+.outer {
+  background-color: lightblue;
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 5px solid white;
+  padding-bottom: 30px;
 }
 img {
   width: 200px;
@@ -90,4 +102,17 @@ img {
   background-color: rgba(240, 30, 255, .4);
 
 }
-
+.droppings {
+  background-color: lightgrey;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 200px;
+  position: absolute;
+  right: 60px;
+  top: 80px;
+  height: 450px;
+}
+#border {
+  height: 20px;
+  background-color: grey;
+}
