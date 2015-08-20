@@ -87,4 +87,17 @@ dropzone('.battery_dropzone','.battery');
 dropzone('.battery_dropzone_first','.battery');
 dropzone('.res_dropzone_first','.resistor');
 
+$(function() {
+  $('.resistor').click(function() {
+    $('.batt_test').css('display', 'none');
+    $('.res_text').find("h2").fadeIn(2000).css('display', 'initial');
+    $('.res_text').find("p").fadeIn(4000).css('display', 'initial');
+  });
+
+   $('.battery').click(function() {
+    $('.res').css('display', 'none');
+    $('.bat_text').find("h2").fadeIn(2000).css('display', 'initial');
+    $('.bat_text').find("p").fadeIn(4000).css('display', 'initial');
+  });
+})
 
