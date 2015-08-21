@@ -102,5 +102,22 @@ $(function() {
     $('.bat_text').find("h2").fadeIn(1000).css('display', 'initial');
     $('.bat_text').find("p").fadeIn(2000).css('display', 'initial');
   });
+
+
 })
+
+
+  $(".nav_res").hover(function(e){
+    $(e.target).attr("src","/assets/resistor_color.png");
+    }, function(){
+    $(this).attr("src","/assets/resistor.png");
+  });
+
+   $("#heyy").hover(function(e){
+    $(e.target).css('display', 'initial');
+    }, function(){
+    $(this).css('display', 'none');
+  });
+
+
 
