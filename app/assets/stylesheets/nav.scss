@@ -5,6 +5,19 @@ nav {
    margin-left: 30px;
 
 }
+header {
+  width: 100vw;
+  background-color: #ADF05A;
+  text-align: center;
+  padding-top: 3px;
+  // position: absolute;
+
+}
+header h3 {
+  font-family: 'Orbitron', sans-serif;
+  // margin-top: 13px;
+
+}
 
 .circle {
     width: 30px;
@@ -39,22 +52,34 @@ nav img {
 }
 hr {
   height: 1px;
-  border-bottom: 2px solid darkgrey !important;
+  border-bottom: 2px solid #FF6E5F !important;
 }
 #lightbulb_off {
   height: 90px;
   width: 70px;
   margin-top: 10px;
+  margin-left: -16px;
+  margin-bottom: 22px;
 }
 #last_hr {
   width: 100px;
   margin-right: -13px;
 }
-nav span {
+span {
+  color: white;
+  font-size: 20px;
+}
+#home_link {
   position: absolute;
   display: none;
-  top: 122px;
-  left: 68px;
+  top: 56px;
+  left: 60px;
+}
+#first_link {
+  position: absolute;
+  display: none;
+  top: 56px;
+  left: 195px;
 }
 
 

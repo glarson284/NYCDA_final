@@ -89,35 +89,50 @@ dropzone('.res_dropzone_first','.resistor');
 
 $(function() {
   $('.resistor').click(function() {
+
     $('.bat_text').find("h2").css('display', 'none');
     $('.bat_text').find("p").css('display', 'none');
+
     $('.init_text').css('display','none');
+
     $('.res_text').find("h2").fadeIn(1000).css('display', 'initial');
     $('.res_text').find("p").fadeIn(2000).css('display', 'initial');
   });
   $('.battery').click(function() {
+
     $('.res_text').find("h2").css('display', 'none');
     $('.res_text').find("p").css('display', 'none');
+
     $('.init_text').css('display','none');
+
     $('.bat_text').find("h2").fadeIn(1000).css('display', 'initial');
     $('.bat_text').find("p").fadeIn(2000).css('display', 'initial');
   });
 
+  $('.resistor').hover(function(){
+    $('#start_res').css('box-shadow', 'none');
 
-})
-
-
+  })
   $(".nav_res").hover(function(e){
     $(e.target).attr("src","/assets/resistor_color.png");
     }, function(){
     $(this).attr("src","/assets/resistor.png");
   });
 
-   $("#heyy").hover(function(e){
-    $(e.target).css('display', 'initial');
+   $("#lightbulb_off").hover(function(e){
+    $(e.target).attr("src","/assets/lightbulbon_copy.png");
     }, function(){
-    $(this).css('display', 'none');
+    $(this).attr("src","/assets/lightbulb.png");
   });
+
+   $("nav").hover(function(){
+    $("nav").find("span").css('display', 'initial');
+    }, function(){
+    $(this).find("span").css('display', 'none');
+  });
+
+})
+
 
 
 
