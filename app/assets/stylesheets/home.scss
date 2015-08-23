@@ -1,3 +1,126 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.landing{}
+.wrap {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  margin-top: 30px;
+  background-color: #333333;
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+.cube {
+  margin:auto;
+  position:relative;
+  height:300px;
+  width:300px;
+  transform-style:preserve-3d;
+  -webkit-animation: rotate 10s infinite ease-in-out;
+  -moz-animation: rotate 10s infinite ease-in-out; 
+  animation: rotate 10s infinite ease-in-out;  
+  
+  transform: rotateY(0deg);
+}
+.side {
+  position:absolute;
+  height:0;
+  width:0;
+  opacity: 0.5;
+  background: transparent;
+  border-bottom: 150px solid #ff0077;
+  border-left: 150px solid transparent; 
+  border-right: 150px solid transparent; 
+  border-top: 150px solid #ff0077;
+}
+
+.front {
+   transform: translateZ(0) rotateY(0deg);
+}
+
+.back {
+   transform: translateZ(0) rotateY(30deg);
+    border-bottom: 150px solid yellow;
+    border-left: 150px solid transparent; 
+    border-right: 150px solid transparent; 
+    border-top: 150px solid yellow;  
+}
+
+.right {
+   transform: translateZ(0) rotateY(60deg);
+}
+
+.left {
+   transform: translateZ(0) rotateY(90deg);
+    border-bottom: 150px solid limegreen;
+    border-left: 150px solid transparent; 
+    border-right: 150px solid transparent; 
+    border-top: 150px solid limegreen;   
+}
+
+.top {
+   transform: translateZ(0) rotateY(120deg);
+}
+
+.bottom {
+   transform: translateZ(0) rotateY(150deg);
+    border-bottom: 150px solid turquoise;
+    border-left: 150px solid transparent; 
+    border-right: 150px solid transparent; 
+    border-top: 150px solid turquoise;   
+}
+  
+@-webkit-keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.welcome {
+  text-align: center;
+  color: white;
+  // border-bottom: 50px solid white;
+}
+.welcome h1 {
+  font-size: 100px;
+  background: #ADF05A;
+  margin-bottom: 0px;
+}
+.welcome h2 {
+  font-size: 70px;
+  background: #ADF05A;
+  margin-bottom: 0;
+}
+.footer {
+  height: 80px;
+  width: 100vw;
+  // position: absolute;
+  margin-bottom: 0;
+  background-color: #ADF05A;
+}
+.landing {
+  // background: #E6E6E6
+;
+}
+
+
+
+
+
+
+
+
+
+

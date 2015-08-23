@@ -14,10 +14,11 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import 'main';
+@import 'hover';
 @import 'nav';
 @import 'first';
 @import 'interact';
+@import 'home';
 @import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 @import url(http://fonts.googleapis.com/css?family=Orbitron);
 
@@ -30,8 +31,12 @@ html {
   margin: 0;
 }
 body {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Orbitron', sans-serif;
 }
 h2 {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Orbitron', sans-serif;
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+
 }

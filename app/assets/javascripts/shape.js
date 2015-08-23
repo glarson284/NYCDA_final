@@ -41,6 +41,15 @@ interact('.draggable')
   // this is used later in the resizing demo
   window.dragMoveListener = dragMoveListener;
 
+function checkChildren() {
+   if ( $('.draggable').children().length === 0 ) {
+    console.log("greater than")
+     $('.button').css('display', 'initial');
+  } else {
+    console.log("hits else")
+    $('.button').css('display', 'none');
+  }
+}
 
 function dropzone(drop, classname){
 
@@ -72,6 +81,8 @@ interact(drop).dropzone({
   ondrop: function (event) {
     event.relatedTarget.style.backgroundColor = "transparent"
     event.relatedTarget.classList.remove('draggable');
+    checkChildren();
+   
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback

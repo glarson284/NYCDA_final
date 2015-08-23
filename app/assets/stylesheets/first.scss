@@ -30,7 +30,7 @@ body {
 }
 .outer {
   background-color: #FF6E5F;
-  // width: 700px;
+  // width: 700px; 
   @include span-columns(6);
   border-radius: 20px;
   border: 5px solid white;
@@ -121,5 +121,9 @@ margin-bottom: 0;
   -webkit-box-shadow: 0 0 30px black;
         box-shadow: 0 0 30px black;
   border-radius: 3px;
+}
+.button {
+  display: none;
+  
 }
 
