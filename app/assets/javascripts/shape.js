@@ -98,6 +98,7 @@ dropzone('.battery_dropzone','.battery');
 dropzone('.battery_dropzone_first','.battery');
 dropzone('.res_dropzone_first','.resistor');
 
+// Document Ready
 $(function() {
   $('.resistor').click(function() {
 
@@ -120,6 +121,13 @@ $(function() {
     $('.bat_text').find("p").fadeIn(2000).css('display', 'initial');
   });
 
+    $('#ohm_first_button').click(function(e){    
+      $('.ohm_first').fadeOut('slow', function(){
+        $('.ohm_second').fadeIn('slow');
+      });
+    });
+ 
+
   $('.resistor').hover(function(){
     $('#start_res').css('box-shadow', 'none');
 
@@ -130,10 +138,10 @@ $(function() {
     $(this).attr("src","/assets/resistor.png");
   });
 
-   $("#lightbulb_off").hover(function(e){
-    $(e.target).attr("src","/assets/lightbulbon_copy.png");
+   $(".nav_bat").hover(function(e){
+    $(e.target).attr("src","/assets/bat_pos_right_color.png");
     }, function(){
-    $(this).attr("src","/assets/lightbulb.png");
+    $(this).attr("src","/assets/bat_pos_right.png");
   });
 
    $("nav").hover(function(){
@@ -142,7 +150,21 @@ $(function() {
     $(this).find("span").css('display', 'none');
   });
 
+   $(".about_trigger").click(function() {
+    $(".about").slideDown("slow", function() { $(this).show(); });
+    });
+
+   $("#about_x").click(function() {
+    $(".about").slideUp("slow", function() { $(this).hide(); });
+    });
+
+   $("#instructions_check").click(function() {
+    $(".dim").fadeOut("slow", function() { $(this).hide(); });
+    });
+
 })
+
+
 
 
 

@@ -50,7 +50,7 @@ img {
 }
 #outer-dropzone4 {
   @include outer-dropzone;
-  margin-top: 50px;
+  margin-top: 43px;
 }
 #outer-dropzone5 {
   @include outer-dropzone;
@@ -126,4 +126,44 @@ margin-bottom: 0;
   display: none;
   
 }
+.instructions {
+  position: absolute;
+  width: 300px;
+  background-color: #ADF05A;
+  border: 15px solid #FF4633;
+  border-radius: 5px;
+  left: 40%;
+  top: 40%;
+}
+.dim {
+  // display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

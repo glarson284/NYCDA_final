@@ -1,5 +1,11 @@
 @mixin outer-dropzone {
   height: 70px;
-  width: 190px;
+  width: 205px;
   margin: 0 auto;
+}
+
+@mixin links {
+  position: absolute;
+  display: none;
+  top: 56px;
 }
