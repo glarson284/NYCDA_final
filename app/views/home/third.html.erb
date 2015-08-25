@@ -48,17 +48,28 @@
   <div class="outer_third">
     <div class="outer-dropzones_third">
       <h2>Series Circuit</h2>
-      <div id="outer-dropzone4" class="res_dropzone_first">
+      <div id="outer-dropzone8" class="res_dropzone_first">
       </div>
-      <div id="outer-dropzone5" class="battery_dropzone_first">
+      <div id="outer-dropzone9" class="res_dropzone_first">
       </div>
-      <%= link_to "Continue", series_path, :class=>"button" %>
+      <div id="outer-dropzone10" class="res_dropzone_first">
+      </div>
+      <div id="outer-dropzone11" class="battery_dropzone_first">
+      </div>
+      <%= link_to "Continue", parallel_path, :class=>"button" %>
     </div>
+
   </div>
 
   <div class="droppings">
-    <div class="draggable drag-drop resistor">
-      <img src="/assets/resistor.png" id="start_res">
+    <div class="draggable drag-drop resistor series_res">
+      <img src="/assets/resistor.png" >
+    </div> 
+    <div class="draggable drag-drop resistor series_res">
+      <img src="/assets/resistor.png" >
+    </div> 
+    <div class="draggable drag-drop resistor series_res">
+      <img src="/assets/resistor.png" >
     </div> 
 
     <div id="yes-drop" class="draggable drag-drop battery">

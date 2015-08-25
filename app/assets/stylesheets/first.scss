@@ -12,6 +12,7 @@ body {
 .outer h2 {
   font-size: 40px;
   text-align: center;
+  margin: 0;
 }
 .clear {
   height: 20px;
@@ -58,7 +59,7 @@ img {
   height: 130px;
 }
 
-.res_dropzone_first, .battery_dropzone_first {
+.res_dropzone_first, .battery_dropzone_first, .res_dropzone_third {
   // position: absolute;
   // background-color: #ccc;
   border: dashed 4px transparent;

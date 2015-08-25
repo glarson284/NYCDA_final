@@ -97,6 +97,7 @@ dropzone('.res_dropzone','.resistor');
 dropzone('.battery_dropzone','.battery');
 dropzone('.battery_dropzone_first','.battery');
 dropzone('.res_dropzone_first','.resistor');
+dropzone('.res_dropzone_third','.series_res');
 
 // Document Ready
 $(function() {

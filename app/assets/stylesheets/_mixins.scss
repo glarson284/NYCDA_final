@@ -2,10 +2,16 @@
   height: 70px;
   width: 205px;
   margin: 0 auto;
+  background-color: blue;
 }
 
 @mixin links {
   position: absolute;
   display: none;
   top: 56px;
+}
+@mixin outer-dropzone2 {
+  height: 50px;
+  width: 135px;
+
 }
