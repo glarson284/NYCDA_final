@@ -50,11 +50,11 @@ img {
 }
 #outer-dropzone4 {
   @include outer-dropzone;
-  margin-top: 43px;
+  margin-top: 48px;
 }
 #outer-dropzone5 {
   @include outer-dropzone;
-  margin-top: 140px;
+  margin-top: 145px;
   height: 130px;
 }
 
@@ -78,7 +78,7 @@ img {
   // right: 60px;
   // top: 80px;
   @include span-columns(2);
-  height: 500px;
+  height: 525px;
   border: 5px solid white;
 }
 
@@ -87,7 +87,7 @@ img {
   @include shift(1);
   @include span-columns(2);
   // margin-left: 50px;
-  height: 500px;
+  height: 525px;
   border-radius: 10px;
   background-color: #ADF05A;
   padding: 0px 10px;

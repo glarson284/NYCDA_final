@@ -126,7 +126,12 @@ $(function() {
         $('.ohm_second').fadeIn('slow');
       });
     });
- 
+  
+    $('#ohm_second_button').click(function(e){    
+      $('.ohm_second').fadeOut('slow', function(){
+        $('.ohm_first').fadeIn('slow');
+      });
+    });
 
   $('.resistor').hover(function(){
     $('#start_res').css('box-shadow', 'none');
@@ -161,6 +166,47 @@ $(function() {
    $("#instructions_check").click(function() {
     $(".dim").fadeOut("slow", function() { $(this).hide(); });
     });
+
+
+   $("#variable_def_forward").click(function() {
+     $('.current_def').css('display', 'initial');
+     $('.variable_def').css('display', 'none');
+    });
+
+   $("#current_def_forward").click(function() {
+     $('.current_def').css('display', 'none');
+     $('.res_def').css('display', 'initial');
+    });
+
+   $("#current_def_back").click(function() {
+     $('.current_def').css('display', 'none');
+     $('.variable_def').css('display', 'initial');
+    });
+
+   $("#res_def").click(function() {
+     $('.bat_def').css('display', 'initial');
+     $('.res_def').css('display', 'none');
+    });
+   $("#res_def_back").click(function() {
+    $('.current_def').css('display', 'initial');
+     $('.res_def').css('display', 'none');
+    });
+   $("#bat_def_back").click(function() {
+    $('.bat_def').css('display', 'none');
+     $('.res_def').css('display', 'initial');
+     });
+   $("#bat_def").click(function() {
+    $('.bat_def').css('display', 'none');
+     $('.ohm_def').css('display', 'initial');
+     });
+
+    $("#ohm_def_back").click(function() {
+    $('.bat_def').css('display', 'initial');
+     $('.ohm_def').css('display', 'none');
+     });
+
+
+
 
 })
 
