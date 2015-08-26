@@ -51,8 +51,8 @@ function checkChildren() {
   }
 }
 
-function dropzone(drop, classname){
-
+function dropzone(drop, classname, x){
+num = 0;
 interact(drop).dropzone({
   // only accept elements matching this CSS selector
   accept: classname, 
@@ -60,7 +60,6 @@ interact(drop).dropzone({
   overlap: .75,
 
   // listen for drop related events:
-
   ondropactivate: function (event) {
     // add active dropzone feedback
     event.target.classList.add('drop-active');
@@ -79,9 +78,26 @@ interact(drop).dropzone({
     event.relatedTarget.classList.remove('can-drop');
   },
   ondrop: function (event) {
-    event.relatedTarget.style.backgroundColor = "transparent"
+    
+    event.relatedTarget.style.backgroundColor = "transparent";
+    
+
+    if (x === 0){
     event.relatedTarget.classList.remove('draggable');
     checkChildren();
+    }
+    else {
+      console.log($(this).attr("id"))
+      num = 6 + num;
+        if (num === 4) {
+          console.log ('worked?')
+        }
+        else {
+          console.log('did not')
+        }
+
+    }
+    
    
   },
   ondropdeactivate: function (event) {
@@ -93,11 +109,13 @@ interact(drop).dropzone({
 
 });
 }
-dropzone('.res_dropzone','.resistor');
-dropzone('.battery_dropzone','.battery');
-dropzone('.battery_dropzone_first','.battery');
-dropzone('.res_dropzone_first','.resistor');
-dropzone('.res_dropzone_third','.series_res');
+dropzone('.res_dropzone','.resistor', 0);
+dropzone('.battery_dropzone','.battery', 0);
+dropzone('.battery_dropzone_first','.battery', 0);
+dropzone('.res_dropzone_first','.resistor', 0);
+dropzone('.res_dropzone_third','.series_res', 0);
+dropzone('.res_dropzone_fifth','.resistor_g', 2);
+
 
 // Document Ready
 $(function() {

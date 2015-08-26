@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-512 301.2 446.5 260.8" style="enable-background:new -512 301.2 446.5 260.8;" xml:space="preserve">
+	 viewBox="-768 451.4 446.5 260.8" style="enable-background:new -768 451.4 446.5 260.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
 	.st1{fill:#ADF05A;}
 	.st2{font-family:'CapitalsRegular';}
-	.st3{font-size:25.2939px;}
+	.st3{font-size:18.047px;}
+	.st4{enable-background:new    ;}
+	.st5{font-size:15px;}
 </style>
-<line class="st0" x1="-68.5" y1="303.6" x2="-68.5" y2="556"/>
-<line class="st0" x1="-509" y1="303.6" x2="-509" y2="556"/>
-<line class="st0" x1="-197.6" y1="304.2" x2="-69" y2="304.2"/>
-<line class="st0" x1="-69" y1="559" x2="-227" y2="559"/>
-<line class="st0" x1="-380.4" y1="304.2" x2="-509" y2="304.2"/>
-<g>
-	<path class="st1" d="M-293.9,477c-63.6,0-115.1-26.8-115.1-60c0-1.6,0.1-3.3,0.4-4.9c4.8-30.9,54.3-55.1,114.7-55.1v-20.6l86.3,30
-		l-86.3,26.1v-26.1c-53.6,0-97.2,22.7-97.2,50.6s43.6,50.6,97.2,50.6s97.2-22.5,97.2-50.6h17.9C-178.8,450.2-230.3,477-293.9,477z"
-		/>
-</g>
-<text transform="matrix(1.4389 0 0 1 -182.4159 471.8494)" class="st1 st2 st3">I</text>
-<line class="st0" x1="-351" y1="559" x2="-509" y2="559"/>
+<line class="st0" x1="-324.5" y1="453.8" x2="-324.5" y2="706.2"/>
+<line class="st0" x1="-765" y1="453.8" x2="-765" y2="706.2"/>
+<line class="st0" x1="-453.6" y1="454.4" x2="-325" y2="454.4"/>
+<line class="st0" x1="-325" y1="709.2" x2="-483" y2="709.2"/>
+<line class="st0" x1="-636.4" y1="454.4" x2="-765" y2="454.4"/>
+<line class="st0" x1="-607" y1="709.2" x2="-765" y2="709.2"/>
+<path class="st1" d="M-435.2,522.5h-50.4c-8.2,0-14.9,4-14.9,8.8c0,4.9,6.7,8.8,14.9,8.8h35.5v77.6h-206.1v-77.6h78.7l-24.2,14.4
+	c-5.8,3.5-5.8,9,0,12.5c2.9,1.7,6.7,2.6,10.5,2.6c3.8,0,7.6-0.9,10.5-2.6l49.6-29.5c2.8-1.7,4.4-3.9,4.4-6.3c0-2.3-1.6-4.6-4.4-6.3
+	l-49.6-29.5c-5.8-3.5-15.2-3.5-21.1,0c-5.8,3.5-5.8,9,0,12.5l24.2,14.4h-93.6c-8.2,0-14.9,4-14.9,8.8v95.2c0,4.9,6.7,8.8,14.9,8.8
+	h235.9c8.2,0,14.9-4,14.9-8.8v-95.2C-420.3,526.5-427,522.5-435.2,522.5z"/>
+<text transform="matrix(1.0563 0 0 1 -690.7473 700.0444)" class="st1 st2 st3">V=1.5V</text>
+<text transform="matrix(1.0563 0 0 1 -553.1647 571.4706)" class="st1 st2 st3">I=.5A</text>
+<text transform="matrix(1.0563 0 0 1 -453.6 483.0547)" class="st4"><tspan x="0" y="0" class="st1 st2 st3">r=</tspan><tspan x="24.5" y="0" class="st1 st2 st5">3Ω</tspan><tspan x="47" y="0" class="st1 st2 st3"> </tspan></text>
 </svg>

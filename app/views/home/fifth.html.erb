@@ -8,9 +8,9 @@
     <hr class="hr">
   <a href="/series"><img src="/assets/resistor.png" class="nav_res"><span id="third_link">Series Circuit</span></a> 
     <hr class="hr">
-  <a href="/parallel"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="fourth_link" style="visibility: hidden">Parallel Circuit</span></a>  
+  <a href="/parallel"><img src="/assets/resistor.png" class="nav_res"><span id="fourth_link">Parallel Circuit</span></a>  
     <hr class="hr">
-  <a href="/games1"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="fifth_link" style="visibility: hidden">Game1 Circuit</span></a>  
+  <a href="/games1"><img src="/assets/resistor.png" class="nav_res"><span id="fifth_link">Series Circuit Game</span></a>  
     <hr class="hr">
   <a href="/games2"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="sixth_link" style="visibility: hidden">Game2 Circuit</span></a>  
     <hr class="hr" id="last_hr">
@@ -47,14 +47,16 @@
   </div>
   <div class="outer_third">
     <div class="outer-dropzones_third">
-      <h2>Series Circuit</h2>
-      <div id="outer-dropzone8" class="res_dropzone_first">
-      </div>
-      <div id="outer-dropzone9" class="res_dropzone_first">
-      </div>
-      <div id="outer-dropzone10" class="res_dropzone_first">
-      </div>
-      <div id="outer-dropzone11" class="battery_dropzone_first">
+      <h2>Series Circuit Game</h2>
+      <div class="resdrop">
+        <div id="outer-dropzone8" class="res_dropzone_fifth">
+        </div>
+        <div id="outer-dropzone9" class="res_dropzone_fifth">
+        </div>
+        <div id="outer-dropzone10" class="res_dropzone_fifth">
+        </div>
+        <div id="outer-dropzone11" class="battery_dropzone_first">
+        </div>
       </div>
       <%= link_to "Continue", parallel_path, :class=>"button" %>
     </div>
@@ -62,23 +64,23 @@
   </div>
 
   <div class="droppings">
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res" data-id="3">
+      <img src="/assets/resistor.png">
     </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res" data-id="2">
+      <img src="/assets/resistor.png">
     </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res">
+      <!-- <img src="/assets/resistor.png" > -->
     </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res">
+      <!-- <img src="/assets/resistor.png" > -->
     </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res">
+      <!-- <img src="/assets/resistor.png" > -->
     </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <img src="/assets/resistor.png" >
+    <div class="draggable drag-drop resistor_g series_res">
+      <!-- <img src="/assets/resistor.png" > -->
     </div> 
 
     <div id="yes-drop" class="draggable drag-drop battery">

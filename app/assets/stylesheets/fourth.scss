@@ -30,3 +30,18 @@
   margin-top: 135px;
   height: 130px;
 }
+.outer_fourth {
+  background-color: #FF6E5F;
+  // width: 700px; 
+  @include span-columns(6);
+  border-radius: 20px;
+  border: 5px solid white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.outer_fourth h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  // margin-bottom: 100px;
+}
