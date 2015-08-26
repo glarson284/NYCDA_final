@@ -1,50 +1,84 @@
-<!-- 
+<header><h3>Circuit Circus</h3></header>
 <nav>
-  <div class="cirleparent">
-    <div class="circle"></div>
-    <span>Home</span>
-  </div>
- 
- <div class="cirleparent">
-    <div class="circle"></div>
-    <span>Home</span>
-  </div>  
-   
-   <div class="cirleparent">
-    <div class="circle"></div>
-    <span>Home</span>
-  </div>
-  
-  <div class="cirleparent">
-    <div class="circle"></div>
-    <span>Home</span>
-  </div>
-   
-   <div class="cirleparent">
-    <div class="circle"></div>
-    <span>Home</span>
-  </div> -->
-<!-- </nav> -->
+  <a href="/"><img src="/assets/bat_pos_right.png" class="nav_bat"><span id="home_link">Home</span></a>
+    <hr id="first_hr">
+  <a href="/whatisacircuit"><img src="/assets/resistor.png" class="nav_res"><span id="first_link">What is a circuit?</span></a>
+    <hr class="hr">
+  <a href="/ohm"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="second_link" style="visibility: hidden">Ohm's Law</span></a> 
+    <hr class="hr">
+  <a href="/series"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a>
+    <hr class="hr">
+  <a href="/parallel"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr">
+  <a href="/game1"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr">
+  <a href="/game2"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr" id="last_hr">
+  <img src="/assets/lightbulb.png" id="lightbulb_off"> 
+</nav>
 <div class="clear"></div>
-<div class="learning_first"></div>
-<div class="outer">
-  <div class="outer-dropzones_first">
-    <div id="outer-dropzone4" class="res_dropzone_first">
-    </div>
-    <div id="outer-dropzone5" class="battery_dropzone_first">
-    </div>
-  </div>
-  </div>
+<div class="info">
 
-  <div class="droppings">
-    <div class="draggable drag-drop resistor" >
-      <img src="/assets/resistor.png">
-    </div>
 
-    <div id="yes-drop" class="draggable drag-drop battery">
-      <img src="/assets/bat_pos_left.png">
+  <div class="dim">
+    <div class="instructions">
+        <h2>Welcome!</h2>
+        <p>
+          This is lesson one! Here you have a basic circuit! Click on an object to learn more about it! Click on the glowing black object and drag it to the dashed box that appears! Good Luck! And remember, have fun!
+        </p>
+      <button id="instructions_check">Got It!</button>
     </div>
   </div>
+      
+    <div class="learning_first">
+      <div class="init_text">
+        <h2>Circuit</h2>
+          An electronic circuit is a complete course of conductors through which current can travel. Circuits provide a path for current to flow. To be a circuit, this path must start and end at the same point. In other words, a circuit must form a loop.
+        </p>
+      </div>
+      <div class="res_text">
+        <h2>Resistors</br></h2>
+        <p>
+          A resistor represents a given amount of resistance 
+          in a circuit. Resistance is a measure of how the flow 
+          of electric current is opposed or "resisted." It is 
+          defined by Ohm's law which says the resistance equals 
+          the voltage divided by the current. 
+        </p>
+      </div>
+      <div class="bat_text">
+        <h2>Battery</br></h2>
+        <p>
+          A battery represents a given amount of resistance 
+          in a circuit. Resistance is a measure of how the flow 
+          of electric current is opposed or "resisted." It is 
+          defined by Ohm's law which says the resistance equals 
+          the voltage divided by the current. 
+        </p>
+      </div>
+    </div>
+    <div class="outer">
+      <div class="outer-dropzones_first">
+        <h2>What is a Circuit?</h2>
+        <div id="outer-dropzone4" class="res_dropzone_first">
+        </div>
+        <div id="outer-dropzone5" class="battery_dropzone_first">
+        </div>
+        <%= link_to "Continue", ohm_path, {:class => "button"}%>
+      </div>
+    </div>
+
+    <div class="droppings">
+      <div class="draggable drag-drop resistor">
+        <img src="/assets/resistor.png" id="start_res">
+      </div> 
+      <div id="yes-drop" class="draggable drag-drop battery">
+        <img src="/assets/bat_pos_left.png">
+      </div>
+    </div>
+</div>
+
+
 
 
 

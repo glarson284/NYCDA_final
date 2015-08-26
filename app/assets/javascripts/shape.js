@@ -4,7 +4,7 @@ interact('.draggable')
     inertia: true,
     // keep the element within the area of it's parent
     restrict: {
-      // restriction: "parent",
+      restriction: "html",
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
@@ -13,7 +13,7 @@ interact('.draggable')
     onmove: dragMoveListener,
     // call this function on every dragend event
     onend: function (event) {
-      var textEl = event.target.querySelector('p');
+      var textEl = event.target.querySelector('span');
 
       textEl && (textEl.textContent =
         'moved a distance of '
@@ -41,9 +41,19 @@ interact('.draggable')
   // this is used later in the resizing demo
   window.dragMoveListener = dragMoveListener;
 
+function checkChildren() {
+   if ( $('.draggable').children().length === 0 ) {
+    console.log("greater than")
+     $('.button').css('display', 'initial');
+  } else {
+    console.log("hits else")
+    $('.button').css('display', 'none');
+  }
+}
 
-function dropzone(drop, classname){
 
+function dropzone(drop, classname, x){
+num = 0;
 interact(drop).dropzone({
   // only accept elements matching this CSS selector
   accept: classname, 
@@ -51,7 +61,6 @@ interact(drop).dropzone({
   overlap: .75,
 
   // listen for drop related events:
-
   ondropactivate: function (event) {
     // add active dropzone feedback
     event.target.classList.add('drop-active');
@@ -70,8 +79,57 @@ interact(drop).dropzone({
     event.relatedTarget.classList.remove('can-drop');
   },
   ondrop: function (event) {
-    event.relatedTarget.style.backgroundColor = "transparent"
+    
+    event.relatedTarget.style.backgroundColor = "transparent";
+    
+
+    if (x === true){
     event.relatedTarget.classList.remove('draggable');
+    checkChildren();
+    }
+    else {
+
+      $(".resistor_s.can-drop").each(function(){
+        event.relatedTarget.classList.remove('draggable');
+        console.log(this);
+        id = $(this).data("score");
+        if (id) {
+          console.log(id);
+          num += id;
+          console.log(num)
+        }  
+      });
+
+      $(".resistor_s.can-drop").each(function(){
+        event.relatedTarget.classList.remove('draggable');
+        console.log(this);
+        id = $(this).data("score");
+        if (id) {
+          console.log(id);
+          num += id;
+          console.log(num)
+        }  
+      });
+
+
+        if (num === 9) {  
+          correct = true;
+        } 
+        else {
+          correct = false;
+        }
+        $('#check').click(function(){
+          if (correct === true) {
+            $('.button').css('display', 'initial');
+          }
+          else {
+            $('.wrong_button').css('display', 'initial');
+          }
+
+        })
+
+    num = 0;
+   }
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
@@ -82,9 +140,131 @@ interact(drop).dropzone({
 
 });
 }
-dropzone('.res_dropzone','.resistor');
-dropzone('.battery_dropzone','.battery');
-dropzone('.battery_dropzone_first','.battery');
-dropzone('.res_dropzone_first','.resistor');
+dropzone('.res_dropzone','.resistor',true);
+dropzone('.battery_dropzone','.battery',true);
+dropzone('.battery_dropzone_first','.battery', true);
+dropzone('.res_dropzone_first','.resistor', true);
+dropzone('.res_dropzone_third','.series_res', true);
+dropzone('.res_dropzone_fifth','.resistor_s', false);
+dropzone('.res_dropzone_sixth','.resistor_p', false);
+dropzone('.battery_dropzone_s','.battery_s',false);
+
+
+
+// Document Ready
+$(function() {
+  $('.resistor').click(function() {
+
+    $('.bat_text').find("h2").css('display', 'none');
+    $('.bat_text').find("p").css('display', 'none');
+
+    $('.init_text').css('display','none');
+
+    $('.res_text').find("h2").fadeIn(1000).css('display', 'initial');
+    $('.res_text').find("p").fadeIn(2000).css('display', 'initial');
+  });
+  $('.battery').click(function() {
+
+    $('.res_text').find("h2").css('display', 'none');
+    $('.res_text').find("p").css('display', 'none');
+
+    $('.init_text').css('display','none');
+
+    $('.bat_text').find("h2").fadeIn(1000).css('display', 'initial');
+    $('.bat_text').find("p").fadeIn(2000).css('display', 'initial');
+  });
+
+    $('#ohm_first_button').click(function(e){    
+      $('.ohm_first').fadeOut('slow', function(){
+        $('.ohm_second').fadeIn('slow');
+      });
+    });
+  
+    $('#ohm_second_button').click(function(e){    
+      $('.ohm_second').fadeOut('slow', function(){
+        $('.ohm_first').fadeIn('slow');
+      });
+    });
+
+  $('.resistor').hover(function(){
+    $('#start_res').css('box-shadow', 'none');
+
+  })
+  $(".nav_res").hover(function(e){
+    $(e.target).attr("src","/assets/resistor_color.png");
+    }, function(){
+    $(this).attr("src","/assets/resistor.png");
+  });
+
+   $(".nav_bat").hover(function(e){
+    $(e.target).attr("src","/assets/bat_pos_right_color.png");
+    }, function(){
+    $(this).attr("src","/assets/bat_pos_right.png");
+  });
+
+   $("nav").hover(function(){
+    $("nav").find("span").css('display', 'initial');
+    }, function(){
+    $(this).find("span").css('display', 'none');
+  });
+
+   $(".about_trigger").click(function() {
+    $(".about").slideDown("slow", function() { $(this).show(); });
+    });
+
+   $("#about_x").click(function() {
+    $(".about").slideUp("slow", function() { $(this).hide(); });
+    });
+
+   $("#instructions_check").click(function() {
+    $(".dim").fadeOut("slow", function() { $(this).hide(); });
+    });
+
+
+   $("#variable_def_forward").click(function() {
+     $('.current_def').css('display', 'initial');
+     $('.variable_def').css('display', 'none');
+    });
+
+   $("#current_def_forward").click(function() {
+     $('.current_def').css('display', 'none');
+     $('.res_def').css('display', 'initial');
+    });
+
+   $("#current_def_back").click(function() {
+     $('.current_def').css('display', 'none');
+     $('.variable_def').css('display', 'initial');
+    });
+
+   $("#res_def").click(function() {
+     $('.bat_def').css('display', 'initial');
+     $('.res_def').css('display', 'none');
+    });
+   $("#res_def_back").click(function() {
+    $('.current_def').css('display', 'initial');
+     $('.res_def').css('display', 'none');
+    });
+   $("#bat_def_back").click(function() {
+    $('.bat_def').css('display', 'none');
+     $('.res_def').css('display', 'initial');
+     });
+   $("#bat_def").click(function() {
+    $('.bat_def').css('display', 'none');
+     $('.ohm_def').css('display', 'initial');
+     });
+
+    $("#ohm_def_back").click(function() {
+    $('.bat_def').css('display', 'initial');
+     $('.ohm_def').css('display', 'none');
+     });
+
+
+
+
+})
+
+
+
+
 
 

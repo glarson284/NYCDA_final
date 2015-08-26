@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   root "home#index"
 
   get  "/whatisacircuit" => 'home#first'
+  get  "/ohm" => 'home#second'
+  get  "/series" => 'home#third'
+  get  "/parallel" => 'home#fourth'
+  get  "/games1" => 'home#fifth'
+  get  "/games2" => 'home#sixth'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

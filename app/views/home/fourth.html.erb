@@ -1,0 +1,76 @@
+<header><h3>Circuit Circus</h3></header>
+<nav>
+  <a href="/"><img src="/assets/bat_pos_right.png" class="nav_bat"><span id="home_link">Home</span></a>
+    <hr id="first_hr">
+  <a href="/whatisacircuit"><img src="/assets/resistor.png" class="nav_res"><span id="first_link">What is a circuit?</span></a>
+    <hr class="hr">
+  <a href="/ohm"><img src="/assets/resistor.png" class="nav_res"><span id="second_link">Ohm's Law</span></a> 
+    <hr class="hr">
+  <a href="/series"><img src="/assets/resistor.png" class="nav_res"><span id="third_link">Series Circuit</span></a> 
+    <hr class="hr">
+  <a href="/parallel"><img src="/assets/resistor.png" class="nav_res"><span id="fourth_link">Parallel Circuit</span></a>  
+    <hr class="hr">
+  <a href="/games1"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="fifth_link" style="visibility: hidden">Game1 Circuit</span></a>  
+    <hr class="hr">
+  <a href="/games2"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="sixth_link" style="visibility: hidden">Game2 Circuit</span></a>  
+    <hr class="hr" id="last_hr">
+  <img src="/assets/lightbulb.png" id="lightbulb_off"> 
+</nav>
+<div class="clear"></div>
+<div class="info">
+  <div class="learning_first">
+    <div class="init_text">
+      <h2>Parallel</br>Circuit</h2>
+        An electronic circuit is a complete course of conductors through which current can travel. Circuits provide a path for current to flow. To be a circuit, this path must start and end at the same point. In other words, a circuit must form a loop.
+      </p>
+    </div>
+    <div class="res_text">
+      <h2>Resistors</br></h2>
+      <p>
+        A resistor represents a given amount of resistance 
+        in a circuit. Resistance is a measure of how the flow 
+        of electric current is opposed or "resisted." It is 
+        defined by Ohm's law which says the resistance equals 
+        the voltage divided by the current. 
+      </p>
+    </div>
+    <div class="bat_text">
+      <h2>Battery</br></h2>
+      <p>
+        A battery represents a given amount of resistance 
+        in a circuit. Resistance is a measure of how the flow 
+        of electric current is opposed or "resisted." It is 
+        defined by Ohm's law which says the resistance equals 
+        the voltage divided by the current. 
+      </p>
+    </div>
+  </div>
+    <div class="outer_fourth">
+      <h2>Parallel Circuit</h2>
+      <div class="outer-dropzones_fourth">
+        
+        <div id="outer-dropzone12" class="res_dropzone_first">
+        </div>
+        <div id="outer-dropzone13" class="res_dropzone_first">
+        </div>
+        <div id="outer-dropzone14" class="battery_dropzone_first">
+        </div>
+        <%= link_to "Continue", games1_path, {:class => "button"}%>
+      </div>
+    </div>
+
+    <div class="droppings">
+      <div class="draggable drag-drop resistor">
+        <img src="/assets/resistor.png" >
+      </div> 
+      <div class="draggable drag-drop resistor">
+        <img src="/assets/resistor.png" >
+      </div> 
+      <div class="draggable drag-drop battery">
+        <img src="/assets/bat_pos_left.png">
+      </div>
+    </div>
+</div>
+
+
+

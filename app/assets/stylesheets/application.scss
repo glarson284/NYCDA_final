@@ -14,16 +14,32 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import 'main';
 @import 'nav';
 @import 'first';
 @import 'interact';
+@import 'home';
+@import 'second';
+@import 'third';
+@import 'fourth';
+@import 'fifth';
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
 
 html {
-  height: 900px;
-  width: 1200px;
+  height: 130vh;
+  width: 100vw;
 }
 
 * {
   margin: 0;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+
 }

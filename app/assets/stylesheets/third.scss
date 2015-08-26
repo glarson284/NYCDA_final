@@ -1,0 +1,130 @@
+@import 'mixins';
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+#outer-dropzone6 {
+  @include outer-dropzone;
+  margin-top: 41px;
+}
+#outer-dropzone7 {
+  @include outer-dropzone;
+  margin-top: 140px;
+  height: 130px;
+}
+
+.variable_def {
+  text-align: center;
+}
+.current_def {
+  text-align: center;
+  display: none;
+}
+.res_def {
+  display: none;
+  text-align: center;
+}
+.bat_def {
+  display: none;
+  text-align: center;
+}
+.ohm_def {
+  display: none;
+  text-align: center;
+}
+.ohm_def p{
+  margin: 0;
+}
+.outer-dropzones_third{
+  background: url("/assets/series_circuit.svg") no-repeat center center;
+  // background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-size: 90%;
+  // background-color: lightblue;
+  border-radius: 20px;
+  display: inline-block;
+  background-position: center;
+   // @include span-columns(12);  
+  // padding-bottom: 20px;
+}
+.outer_third {
+    background-color: #FF6E5F;
+  // width: 700px; 
+  @include span-columns(6);
+  border-radius: 20px;
+  border: 5px solid white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.outer_third h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.series_res {
+  width: 150px;
+}
+#outer-dropzone8{
+  @include outer-dropzone2;
+  @include shift(1.5);
+  @include span-columns(3);
+  display: inline-block;
+  // margin-left: 120px;
+  // margin-top: 30px;
+}
+#outer-dropzone9{
+  @include outer-dropzone2;
+  // @include shift(1);
+  @include span-columns(3);
+  display: inline-block;
+  // margin-left: 15px;
+  margin-right: 15px;
+  // margin-top: 30px;
+}
+#outer-dropzone10{
+  @include outer-dropzone2;
+  @include span-columns(3);
+  // margin-teop: 10px;
+  display: inline-block;
+  // margin-top: 30px;
+}
+#outer-dropzone11 {
+  @include outer-dropzone;
+  margin-top: 290px;
+  height: 130px;
+}
+
+.resdrop {
+  @include span-columns(12);
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

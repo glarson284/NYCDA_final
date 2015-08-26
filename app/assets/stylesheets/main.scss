@@ -4,10 +4,13 @@
 @import 'mixins';
 
 body {
+
   background: grey;
   height: 900px;
   width: 1450px;
-
+}
+.info {
+  @include outer-container(100%);
 }
 
 .clear {

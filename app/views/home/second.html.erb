@@ -1,0 +1,126 @@
+<header><h3>Circuit Circus</h3></header>
+<nav>
+  <a href="/"><img src="/assets/bat_pos_right.png" class="nav_bat"><span id="home_link">Home</span></a>
+    <hr id="first_hr">
+  <a href="/whatisacircuit"><img src="/assets/resistor.png" class="nav_res"><span id="first_link">What is a circuit?</span></a>
+    <hr class="hr">
+  <a href="/ohm"><img src="/assets/resistor.png" class="nav_res"><span id="second_link">Ohm's Law</span></a> 
+    <hr class="hr">
+  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a>
+    <hr class="hr">
+  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr">
+  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr">
+  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
+    <hr class="hr" id="last_hr">
+  <img src="/assets/lightbulb.png" id="lightbulb_off"> 
+</nav>
+<div class="clear"></div>
+<div class="info">
+  <div class="learning_first">
+    <div class="init_text">
+    <div class="ohm_first"> 
+      <h2>Ohm's Law</h2>
+      <p>
+        Ohm's law describes the way current flows through a resistance when a different electric potential (voltage) is applied at each end of the resistance. 
+      </p>
+      <button id="ohm_first_button">>></button>
+    </div>
+    <div class="ohm_second">
+      <p>
+        One way to think of this is as water flowing through a pipe. The voltage is the water pressure, the current is the amount of water flowing through the pipe, and the resistance is the size of the pipe. More water will flow through the pipe (current) the more pressure is applied (voltage) and the bigger the pipe is (lower the resistance). 
+      </p>
+      <button id="ohm_second_button"><<</button>
+    </div>
+    </div>
+    <div class="res_text">
+      <h2>Resistors</br></h2>
+      <p>
+        A resistor represents a given amount of resistance 
+        in a circuit. Resistance is a measure of how the flow 
+        of electric current is opposed or "resisted." It is 
+        defined by Ohm's law which says the resistance equals 
+        the voltage divided by the current. 
+      </p>
+    </div>
+    <div class="bat_text">
+      <h2>Battery</br></h2>
+      <p>
+        A battery represents a given amount of resistance 
+        in a circuit. Resistance is a measure of how the flow 
+        of electric current is opposed or "resisted." It is 
+        defined by Ohm's law which says the resistance equals 
+        the voltage divided by the current. 
+      </p>
+    </div>
+  </div>
+  <div class="outer">
+    <div class="outer-dropzones_second">
+      <h2>Ohm's Law</h2>
+      <div id="outer-dropzone6" class="res_dropzone_first">
+        <img src="/assets/resistor.png" id="ohm_res">
+      </div>
+
+      <div id="outer-dropzone7" class="battery_dropzone_first">
+        <img src="/assets/bat_pos_left.png" id="ohm_bat">
+      </div>
+
+      <div class="variable_def">
+        <div><p>I R V?! What do they mean!?</p></div>
+        <div class="variable_def_button">
+          <button id="variable_def_forward">Start</button>
+        </div>
+      </div>
+
+      <div class="current_def">
+        <div><p>I = Current which is measured in Amps</p></div>
+        <div class="current_def_button">
+          <button id="current_def_back">&laquo;</button>
+          <button id="current_def_forward">&raquo;</button>
+          
+        </div>
+      </div>
+
+     <div class="res_def">
+      <div><p>R = Resistance which is measured in Ohms</p></div>
+      <div class="center_button">
+        <button id="res_def_back">&laquo;</button>
+        <button id="res_def">&raquo;</button>
+      </div>
+    </div>
+
+    <div class="bat_def">
+      <div><p>V = Voltage which is measured in Volts</p></div>
+      <div class="center_button">
+        <button id="bat_def_back">&laquo;</button>
+        <button id="bat_def">&raquo;</button>
+      </div>
+    </div>
+
+     <div class="ohm_def">
+      <div><p>The basics of Ohm's law are defined on the left. The equation is V=IR, referring to our previous defintions. That means Voltage = Current * Resistance. </p></div>
+      <div class="center_button">
+        <button id="ohm_def_back">&laquo;</button>
+        <%= link_to "Continue", series_path, :class=>"button_ohm" %>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+
+  <div class="droppings">
+    <div class="draggable drag-drop resistor">
+      <!-- <img src="/assets/resistor.png" id="start_res"> -->
+    </div> 
+
+    <div id="yes-drop" class="draggable drag-drop battery">
+      <!-- <img src="/assets/bat_pos_left.png"> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+

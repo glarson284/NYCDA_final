@@ -4,20 +4,104 @@
 @import 'mixins';
 
 body {
-  background: grey;
-  height: 900px;
-  width: 1450px;
+  background: #47BFBA;
+  height: 100vh;
+  width: 100vw;
 
 }
 
 .clear {
-  height: 100px;
+  height: 20px;
 }
+.dim {
+  // display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+.instructions {
+  position: absolute;
+  width: 300px;
+  background-color: #ADF05A;
+  border: 15px solid #FF4633;
+  border-radius: 5px;
+  left: 40%;
+  top: 40%;
+}
+
+.button {
+  display: none;
+  
+}
+.learning_first {
+  // @include shift(1);
+  @include shift(1);
+  @include span-columns(2);
+  // margin-left: 50px;
+  height: 525px;
+  border-radius: 10px;
+  background-color: #ADF05A;
+  padding: 0px 10px;
+  border: 5px solid white;
+
+}
+
+.init_text h2{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.init_text p {
+margin-bottom: 0;
+}
+
+.res_text h2{
+  display: none;
+  font-size: 30px;
+}
+
+.res_text p {
+  display: none;
+  margin-bottom: 0;
+}
+
+.bat_text h2{
+  display: none;
+  font-size: 30px;
+}
+
+.bat_text p {
+  display: none;
+  margin-bottom: 0;
+}
+
+.outer {
+  background-color: #FF6E5F;
+  // width: 700px; 
+  @include span-columns(6);
+  border-radius: 20px;
+  border: 5px solid white;
+  padding-bottom: 30px;
+}
+
+.outer h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
 .outer-dropzones_first{
   background: url("/assets/circuit1.svg") no-repeat center center;
   // background-size: cover;
-  width: 700px;
-  height: 550px;
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
   background-size: 425px;
   // background-color: lightblue;
@@ -25,37 +109,23 @@ body {
   display: inline-block;
 
 }
-.outer {
-  background-color: lightblue;
-  // width: 700px;
-  @include span-columns(6);
-  border-radius: 20px;
-  border: 5px solid white;
-  padding-bottom: 30px;
-}
+
 img {
   width: 200px;
   height: 100%;
-
 }
 
-#circ {
-  width: 50%;
-  // top: 50%;
-  left: 30%;
-  z-index: -1;
-}
 #outer-dropzone4 {
   @include outer-dropzone;
-  margin-top: 120px;
+  margin-top: 48px;
 }
 #outer-dropzone5 {
   @include outer-dropzone;
-  margin-top: 140px;
+  margin-top: 145px;
   height: 130px;
 }
 
-.res_dropzone_first, .battery_dropzone_first {
+.res_dropzone_first, .battery_dropzone_first, .res_dropzone_third, .res_dropzone_fifth, .battery_dropzone_s {
   // position: absolute;
   // background-color: #ccc;
   border: dashed 4px transparent;
@@ -68,22 +138,36 @@ img {
 
 
 .droppings {
-  background-color: lightgrey;
+  background-color: #ADF05A;
   // margin: 0 auto;
   border-radius: 10px;
   width: 200px;
-  // position: absolute;
-  right: 60px;
-  top: 80px;
+  // right: 60px;
+  // top: 80px;
   @include span-columns(2);
-  height: 500px;
+  height: 525px;
+  border: 5px solid white;
 }
 
-.learning_first {
-  @include shift(1);
-  @include span-columns(2);
-  height: 500px;
-  border-radius: 10px;
-  background-color: pink;
 
+
+
+#start_res {
+  -webkit-box-shadow: 0 0 30px black;
+        box-shadow: 0 0 30px black;
+  border-radius: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
