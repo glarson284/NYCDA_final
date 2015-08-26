@@ -12,5 +12,9 @@
 @mixin outer-dropzone2 {
   height: 50px;
   width: 135px;
-
+}
+@mixin outer-dropzone3 {
+  height: 80px;
+  width: 205px;
+  margin: 0 auto;
 }

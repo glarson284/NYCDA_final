@@ -73,7 +73,7 @@
   @include span-columns(3);
   display: inline-block;
   // margin-left: 120px;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 #outer-dropzone9{
   @include outer-dropzone2;
@@ -82,14 +82,14 @@
   display: inline-block;
   // margin-left: 15px;
   margin-right: 15px;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 #outer-dropzone10{
   @include outer-dropzone2;
   @include span-columns(3);
   // margin-teop: 10px;
   display: inline-block;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 #outer-dropzone11 {
   @include outer-dropzone;

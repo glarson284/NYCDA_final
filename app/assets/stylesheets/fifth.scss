@@ -1,0 +1,56 @@
+.res_dropzone_fifth {
+  vertical-align: middle;
+}
+.resdrop {
+  vertical-align: middle;
+}
+#outer-dropzone15{
+  @include outer-dropzone3;
+  @include shift(1.5);
+  @include span-columns(3);
+  display: inline-block;
+  // margin-left: 120px;
+  // margin-top: 10px;
+}
+#outer-dropzone16{
+  @include outer-dropzone3;
+  // @include shift(1);
+  @include span-columns(3);
+  display: inline-block;
+  // margin-left: 15px;
+  margin-right: 15px;
+  // margin-top: 10px;
+}
+#outer-dropzone17{
+  @include outer-dropzone3;
+  @include span-columns(3);
+  display: inline-block;
+  // margin-top: 10px;
+}
+#outer-dropzone18 {
+  @include outer-dropzone;
+  margin-top: 290px;
+  height: 130px;
+}
+
+.draggable p {
+  margin: 0;
+  text-align: center;
+}
+.wrong_button {
+  display: none;
+}
+.outer-dropzones_fifth{
+  background: url("/assets/game1_circuit.png") no-repeat center center;
+  // background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-size: 90%;
+  // background-color: lightblue;
+  border-radius: 20px;
+  display: inline-block;
+  background-position: center;
+   // @include span-columns(12);  
+  // padding-bottom: 20px;
+}

@@ -13,7 +13,7 @@ interact('.draggable')
     onmove: dragMoveListener,
     // call this function on every dragend event
     onend: function (event) {
-      var textEl = event.target.querySelector('p');
+      var textEl = event.target.querySelector('span');
 
       textEl && (textEl.textContent =
         'moved a distance of '
@@ -51,6 +51,7 @@ function checkChildren() {
   }
 }
 
+
 function dropzone(drop, classname, x){
 num = 0;
 interact(drop).dropzone({
@@ -82,23 +83,53 @@ interact(drop).dropzone({
     event.relatedTarget.style.backgroundColor = "transparent";
     
 
-    if (x === 0){
+    if (x === true){
     event.relatedTarget.classList.remove('draggable');
     checkChildren();
     }
     else {
-      console.log($(this).attr("id"))
-      num = 6 + num;
-        if (num === 4) {
-          console.log ('worked?')
-        }
-        else {
-          console.log('did not')
-        }
 
-    }
-    
-   
+      $(".resistor_s.can-drop").each(function(){
+        event.relatedTarget.classList.remove('draggable');
+        console.log(this);
+        id = $(this).data("score");
+        if (id) {
+          console.log(id);
+          num += id;
+          console.log(num)
+        }  
+      });
+
+      $(".resistor_s.can-drop").each(function(){
+        event.relatedTarget.classList.remove('draggable');
+        console.log(this);
+        id = $(this).data("score");
+        if (id) {
+          console.log(id);
+          num += id;
+          console.log(num)
+        }  
+      });
+
+
+        if (num === 9) {  
+          correct = true;
+        } 
+        else {
+          correct = false;
+        }
+        $('#check').click(function(){
+          if (correct === true) {
+            $('.button').css('display', 'initial');
+          }
+          else {
+            $('.wrong_button').css('display', 'initial');
+          }
+
+        })
+
+    num = 0;
+   }
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
@@ -109,12 +140,15 @@ interact(drop).dropzone({
 
 });
 }
-dropzone('.res_dropzone','.resistor', 0);
-dropzone('.battery_dropzone','.battery', 0);
-dropzone('.battery_dropzone_first','.battery', 0);
-dropzone('.res_dropzone_first','.resistor', 0);
-dropzone('.res_dropzone_third','.series_res', 0);
-dropzone('.res_dropzone_fifth','.resistor_g', 2);
+dropzone('.res_dropzone','.resistor',true);
+dropzone('.battery_dropzone','.battery',true);
+dropzone('.battery_dropzone_first','.battery', true);
+dropzone('.res_dropzone_first','.resistor', true);
+dropzone('.res_dropzone_third','.series_res', true);
+dropzone('.res_dropzone_fifth','.resistor_s', false);
+dropzone('.res_dropzone_sixth','.resistor_p', false);
+dropzone('.battery_dropzone_s','.battery_s',false);
+
 
 
 // Document Ready

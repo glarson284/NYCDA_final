@@ -24,10 +24,15 @@
           transform: translate(0px, 0px);
 
   transition: background-color 0.3s;
+  // background-size: 100%;
 }
 
 .drag-drop.can-drop {
   color: #000;
   background-color: rgba(173,240,90, .8);
-
+  text-align: center;
+  margin: 0;
+}
+.drag-drop.can-drop p{
+  margin: 0;
 }
