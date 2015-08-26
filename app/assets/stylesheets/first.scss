@@ -9,14 +9,94 @@ body {
   width: 100vw;
 
 }
+
+.clear {
+  height: 20px;
+}
+.dim {
+  // display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+.instructions {
+  position: absolute;
+  width: 300px;
+  background-color: #ADF05A;
+  border: 15px solid #FF4633;
+  border-radius: 5px;
+  left: 40%;
+  top: 40%;
+}
+
+.button {
+  display: none;
+  
+}
+.learning_first {
+  // @include shift(1);
+  @include shift(1);
+  @include span-columns(2);
+  // margin-left: 50px;
+  height: 525px;
+  border-radius: 10px;
+  background-color: #ADF05A;
+  padding: 0px 10px;
+  border: 5px solid white;
+
+}
+
+.init_text h2{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.init_text p {
+margin-bottom: 0;
+}
+
+.res_text h2{
+  display: none;
+  font-size: 30px;
+}
+
+.res_text p {
+  display: none;
+  margin-bottom: 0;
+}
+
+.bat_text h2{
+  display: none;
+  font-size: 30px;
+}
+
+.bat_text p {
+  display: none;
+  margin-bottom: 0;
+}
+
+.outer {
+  background-color: #FF6E5F;
+  // width: 700px; 
+  @include span-columns(6);
+  border-radius: 20px;
+  border: 5px solid white;
+  padding-bottom: 30px;
+}
+
 .outer h2 {
   font-size: 40px;
   text-align: center;
   margin: 0;
 }
-.clear {
-  height: 20px;
-}
+
 .outer-dropzones_first{
   background: url("/assets/circuit1.svg") no-repeat center center;
   // background-size: cover;
@@ -29,26 +109,12 @@ body {
   display: inline-block;
 
 }
-.outer {
-  background-color: #FF6E5F;
-  // width: 700px; 
-  @include span-columns(6);
-  border-radius: 20px;
-  border: 5px solid white;
-  padding-bottom: 30px;
-}
+
 img {
   width: 200px;
   height: 100%;
-
 }
 
-#circ {
-  width: 50%;
-  // top: 50%;
-  left: 30%;
-  z-index: -1;
-}
 #outer-dropzone4 {
   @include outer-dropzone;
   margin-top: 48px;
@@ -83,77 +149,14 @@ img {
   border: 5px solid white;
 }
 
-.learning_first {
-  // @include shift(1);
-  @include shift(1);
-  @include span-columns(2);
-  // margin-left: 50px;
-  height: 525px;
-  border-radius: 10px;
-  background-color: #ADF05A;
-  padding: 0px 10px;
-  border: 5px solid white;
 
-}
-.res_text h2{
-  display: none;
-  font-size: 30px;
-}
-.res_text p {
-  display: none;
-  margin-bottom: 0;
-}
-.bat_text h2{
-  display: none;
-  font-size: 30px;
-}
-.bat_text p {
-  display: none;
-  margin-bottom: 0;
-}
-.init_text h2{
-  font-size: 40px;
-  margin-bottom: 0;
-}
-.init_text p {
-margin-bottom: 0;
-}
+
+
 #start_res {
   -webkit-box-shadow: 0 0 30px black;
         box-shadow: 0 0 30px black;
   border-radius: 3px;
 }
-.button {
-  display: none;
-  
-}
-.instructions {
-  position: absolute;
-  width: 300px;
-  background-color: #ADF05A;
-  border: 15px solid #FF4633;
-  border-radius: 5px;
-  left: 40%;
-  top: 40%;
-}
-.dim {
-  // display: none;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.8);
-  top: 0;
-  left: 0;
-  z-index: 1;
-  text-align: center;
-  color: black;
-}
-
-
-
-
-
-
 
 
 
