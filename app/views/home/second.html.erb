@@ -1,19 +1,46 @@
 <header><h3>Circuit Circus</h3></header>
 <nav>
-  <a href="/"><img src="/assets/bat_pos_right.png" class="nav_bat"><span id="home_link">Home</span></a>
-    <hr id="first_hr">
-  <a href="/whatisacircuit"><img src="/assets/resistor.png" class="nav_res"><span id="first_link">What is a circuit?</span></a>
-    <hr class="hr">
-  <a href="/ohm"><img src="/assets/resistor.png" class="nav_res"><span id="second_link">Ohm's Law</span></a> 
-    <hr class="hr">
-  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a>
-    <hr class="hr">
-  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
-    <hr class="hr">
-  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
-    <hr class="hr">
-  <a href="#"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"></a> 
-    <hr class="hr" id="last_hr">
+  <a href="/">
+    <span id="home_link">Home</span>
+    <img src="/assets/bat_pos_right.png" class="nav_bat">
+    
+  </a>
+    <!-- <hr id="first_hr"> -->
+  <a href="/whatisacircuit">
+    <span id="first_link">Circuit</span>
+    <img src="/assets/resistor.png" class="nav_res">
+    
+  </a>
+    <!-- <hr class="hr"> -->
+  <a href="/ohm">
+    <span id="second_link">Ohm's Law</span>
+    <img src="/assets/resistor.png" class="nav_res">
+    
+  </a> 
+    <!-- <hr class="hr"> -->
+  <a href="/series">
+    <span id="third_link" style="visibility: hidden">Series</span>
+    <img src="/assets/resistor.png" class="nav_res">
+    
+  </a> 
+    <!-- <hr class="hr"> -->
+  <a href="/parallel">
+    <span id="fourth_link" style="visibility: hidden">Parallel</span>
+    <img src="/assets/resistor.png" class="nav_res">
+    
+  </a>  
+    <!-- <hr class="hr"> -->
+  <a href="/games1">
+    <span id="fifth_link" style="visibility: hidden">Game 1</span>
+    <img src="/assets/resistor.png" class="nav_res">
+    
+  </a>  
+    <!-- <hr class="hr"> -->
+  <a href="/games2">
+    <span id="sixth_link" style="visibility: hidden">Game 2</span>
+    <img src="/assets/resistor.png" class="nav_res"> 
+  </a>  
+
   <img src="/assets/lightbulb.png" id="lightbulb_off"> 
 </nav>
 <div class="clear"></div>
@@ -23,7 +50,7 @@
     <div class="ohm_first"> 
       <h2>Ohm's Law</h2>
       <p>
-        Ohm's law describes the way current flows through a resistance when a different electric potential (voltage) is applied at each end of the resistance. 
+        Ohm's law describes the way current flows through a resistance when a different voltage is applied at each end of the resistance. We use the formula V = I * R to represent this. 
       </p>
       <button id="ohm_first_button">>></button>
     </div>
@@ -55,20 +82,13 @@
       </p>
     </div>
   </div>
+
   <div class="outer">
     <h2>Ohm's Law</h2>
     <div class="outer-dropzones_second">
-      
-      <div id="outer-dropzone6" class="res_dropzone_first">
-        <img src="/assets/resistor.png" id="ohm_res">
-      </div>
-
-      <div id="outer-dropzone7" class="battery_dropzone_first">
-        <img src="/assets/bat_pos_left.png" id="ohm_bat">
-      </div>
-
+    <div class="def">
       <div class="variable_def">
-        <div><p>I R V?! What do they mean!?</p></div>
+        <div><p>V = I * R!? What does it mean!?</p></div>
         <div class="variable_def_button">
           <button id="variable_def_forward">Start</button>
         </div>
@@ -100,13 +120,13 @@
     </div>
 
      <div class="ohm_def">
-      <div><p>The basics of Ohm's law are defined on the left. The equation is V=IR, referring to our previous defintions. That means Voltage = Current * Resistance. </p></div>
+      <div><p>So, using the equation V=I*R, we can see that &period;5A * 3&Omega; = 1.5V </p></div>
       <div class="center_button">
         <button id="ohm_def_back">&laquo;</button>
         <%= link_to "Continue", series_path, :class=>"button_ohm" %>
       </div>
     </div>
-      
+      </div>
     </div>
   </div>
 

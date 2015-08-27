@@ -231,10 +231,12 @@ $(function() {
     $(this).attr("src","/assets/bat_pos_right.png");
   });
 
-   $("nav").hover(function(){
-    $("nav").find("span").css('display', 'initial');
+   $("nav span").hover(function(e){
+    $(e.target).css('border-bottom', '5px solid white');
+    $(e.target).css('color', '#FF6E5F');
     }, function(){
-    $(this).find("span").css('display', 'none');
+    $(this).css('border-bottom', '5px solid #FF6E5F');
+    $(this).css('color', 'white');
   });
 
    $(".about_trigger").click(function() {
