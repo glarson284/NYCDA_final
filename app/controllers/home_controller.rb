@@ -20,5 +20,8 @@ class HomeController < ApplicationController
 
   def sixth
   end
+
+  def final
+  end
   
 end

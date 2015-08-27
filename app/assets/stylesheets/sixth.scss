@@ -4,34 +4,25 @@
 .resdrop {
   vertical-align: middle;
 }
-#outer-dropzone15{
-  @include outer-dropzone3;
-  @include shift(1.5);
-  @include span-columns(3);
-  display: inline-block;
+#outer-dropzone19{
+  @include outer-dropzone;
   // margin-left: 120px;
   // margin-top: 10px;
 }
-#outer-dropzone16{
-  @include outer-dropzone3;
-  // @include shift(1);
-  @include span-columns(3);
-  display: inline-block;
-  // margin-left: 15px;
-  margin-right: 15px;
-  // margin-top: 10px;
-}
-#outer-dropzone17{
-  @include outer-dropzone3;
-  @include span-columns(3);
-  display: inline-block;
-  // margin-top: 10px;
-}
-#outer-dropzone18 {
+#outer-dropzone20{
   @include outer-dropzone;
-  margin-top: 290px;
-  height: 130px;
+  margin-top: 6%;
+  // @include shift(1);
+  // margin-left: 15px;
+  // margin-top: 10px;
 }
+#outer-dropzone21{
+  @include outer-dropzone;
+  margin-top: 8%;
+
+  // margin-top: 10px;
+}
+
 
 .draggable p {
   margin: 0;
@@ -41,16 +32,15 @@
   display: none;
 }
 .outer-dropzones_sixth{
-  background: url("/assets/game1_circuit.png") no-repeat center center;
+  background: url("/assets/circuit2-03.png") no-repeat center center;
   // background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 600px;
   margin: 0 auto;
-  background-size: 90%;
+  background-size: 70%;
   // background-color: lightblue;
   border-radius: 20px;
   display: inline-block;
   background-position: center;
-   // @include span-columns(12);  
   // padding-bottom: 20px;
 }

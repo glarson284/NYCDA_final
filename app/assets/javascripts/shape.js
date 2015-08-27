@@ -54,6 +54,9 @@ function checkChildren() {
 
 function dropzone(drop, classname, x){
 num = 0;
+num2 = 0;
+num3 = 1;
+ans = 0;
 interact(drop).dropzone({
   // only accept elements matching this CSS selector
   accept: classname, 
@@ -89,14 +92,25 @@ interact(drop).dropzone({
     }
     else {
 
-      $(".resistor_s.can-drop").each(function(){
+      $(".resistor_p.can-drop").each(function(){
         event.relatedTarget.classList.remove('draggable');
         console.log(this);
         id = $(this).data("score");
+        
+        function sum() {
+            num2 += id;
+            // console.log(num2);
+          }
+        function product() {
+           num3 = num3 * id;
+           // console.log(num3);
+        }
         if (id) {
-          console.log(id);
-          num += id;
-          console.log(num)
+          sum();
+          product();
+          // console.log(id);
+          ans = num3 / num2;
+          console.log(ans);
         }  
       });
 
@@ -114,11 +128,22 @@ interact(drop).dropzone({
 
         if (num === 9) {  
           correct = true;
-        } 
-        else {
-          correct = false;
+        } else if (ans === 4){
+          correct = true;
         }
+        else {
+          correct = false;2
+        }
+        console.log(correct)
+
+        // if (sum === 4){
+        //   correct = true;
+        // } else {
+        //   correct = false;
+        // }
+        
         $('#check').click(function(){
+          console.log(correct)
           if (correct === true) {
             $('.button').css('display', 'initial');
           }
@@ -129,6 +154,10 @@ interact(drop).dropzone({
         })
 
     num = 0;
+    num2 = 0;
+    num3 = 1;
+    ans = 0;
+
    }
   },
   ondropdeactivate: function (event) {

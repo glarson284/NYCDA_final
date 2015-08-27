@@ -2,7 +2,9 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-
+.series_res {
+  width: 80%;
+}
 #outer-dropzone6 {
   @include outer-dropzone;
   margin-top: 41px;
@@ -39,13 +41,13 @@
   background: url("/assets/series_circuit.svg") no-repeat center center;
   // background-size: cover;
   width: 100%;
-  height: 500px;
   margin: 0 auto;
+  height: 450px;
   background-size: 90%;
   // background-color: lightblue;
   border-radius: 20px;
   display: inline-block;
-  background-position: center;
+  background-position: center 15%;
    // @include span-columns(12);  
   // padding-bottom: 20px;
 }
@@ -64,9 +66,6 @@
   margin: 0;
 }
 
-.series_res {
-  width: 150px;
-}
 #outer-dropzone8{
   @include outer-dropzone2;
   @include shift(1.5);
@@ -93,14 +92,10 @@
 }
 #outer-dropzone11 {
   @include outer-dropzone;
-  margin-top: 290px;
+  margin-top: 45%;
   height: 130px;
 }
 
-.resdrop {
-  @include span-columns(12);
-  height: 100px;
-}
 
 
 

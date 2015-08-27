@@ -10,9 +10,9 @@
     <hr class="hr">
   <a href="/parallel"><img src="/assets/resistor.png" class="nav_res"><span id="fourth_link">Parallel Circuit</span></a>  
     <hr class="hr">
-  <a href="/games1"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="fifth_link" style="visibility: hidden">Game1 Circuit</span></a>  
+  <a href="/games1"><img src="/assets/resistor.png" class="nav_res"><span id="fifth_link">Game1 Circuit</span></a>  
     <hr class="hr">
-  <a href="/games2"><img src="/assets/resistor.png" class="nav_res" style="visibility: hidden"><span id="sixth_link" style="visibility: hidden">Game2 Circuit</span></a>  
+  <a href="/games2"><img src="/assets/resistor.png" class="nav_res"><span id="sixth_link">Game2 Circuit</span></a>  
     <hr class="hr" id="last_hr">
   <img src="/assets/lightbulb.png" id="lightbulb_off"> 
 </nav>
@@ -45,37 +45,41 @@
       </p>
     </div>
   </div>
-    <div class="outer_third">
+    <div class="outer_fourth">
       <h2>Parallel Circuit</h2>
       <div class="outer-dropzones_sixth">
         
-        <div id="outer-dropzone12" class="res_dropzone_sixth">
+        <div id="outer-dropzone19" class="res_dropzone_sixth">
         </div>
-        <div id="outer-dropzone13" class="res_dropzone_sixth">
+        <div id="outer-dropzone20" class="res_dropzone_sixth">
         </div>
-        <%= link_to "Continue", games1_path, {:class => "button"}%>
+        <div id="outer-dropzone21" class="res_dropzone_sixth">
+        </div>
       </div>
+        <%= link_to "Continue", games2_path, :class=>"button" %>
+        <%= link_to "Incorrect", games1_path, :class=>"wrong_button" %>
+        <button id="check">Check Answer</button>
     </div>
 
     <div class="droppings">
-    <div class="draggable drag-drop resistor_p series_res" data-score="3">
-      <p>3&Omega;</p>
+    <div class="draggable drag-drop resistor_p series_res" data-score="1">
+      <p>1&Omega;</p>
       <img src="/assets/resistor.png">
     </div> 
     <div class="draggable drag-drop resistor_p series_res" data-score="2">
       <p>2&Omega;</p>
       <img src="/assets/resistor.png"> 
     </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="1">
-      <p>1&Omega;</p>
+    <div class="draggable drag-drop resistor_p series_res" data-score="4">
+      <p>4&Omega;</p>
       <img src="/assets/resistor.png" >
     </div> 
     <div class="draggable drag-drop resistor_p series_res" data-score="5">
       <p>5&Omega;</p>
       <img src="/assets/resistor.png" >
     </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="2">
-      <p>2&Omega;</p>
+    <div class="draggable drag-drop resistor_p series_res" data-score="6">
+      <p>6&Omega;</p>
       <img src="/assets/resistor.png" >
     </div> 
   </div>
