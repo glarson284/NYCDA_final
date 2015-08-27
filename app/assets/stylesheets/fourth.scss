@@ -9,25 +9,26 @@
   width: 100%;
   margin: 0 auto;
   height: 550px;
-  background-size: 70%;
+  background-size: 65%;
   // background-color: lightblue;
   border-radius: 20px;
   display: inline-block;
-  background-position: center 15%;
+  background-position: bottom;
   // padding-bottom: 20px;
 }
 
 #outer-dropzone12 {
   @include outer-dropzone;
+  margin-top: 15px;
 }
 
 #outer-dropzone13 {
   @include outer-dropzone;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 #outer-dropzone14 {
    @include outer-dropzone;
-  margin-top: 20%;
+  margin-top: 23%;
   height: 130px;
 }
 .outer_fourth {
@@ -36,12 +37,14 @@
   @include span-columns(6);
   border-radius: 20px;
   border: 5px solid white;
-  padding-bottom: 30px;
   padding-top: 30px;
+  text-align: center;
 }
 .outer_fourth h2 {
   font-size: 40px;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
+}
+.parallel_button{
+  line-height: 150px !important;
 }

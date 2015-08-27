@@ -3,21 +3,40 @@
 @import "neat/neat";
 @import 'mixins';
 
-a.button {
+a.button{
   color: white;
   background-color: #477dca;
   padding: 15px;
   border-radius: 5px;
   // margin-top: 10px;
-  line-height: 50px;
+  line-height: 60px;
   margin-right: 13px;
+
+  visibility: hidden;
+}
+a.button_ohm {
+  color: white;
+  background-color: #477dca;
+  padding: 12px;
+  border-radius: 5px;
+  // margin-top: 10px;
+  line-height: 60px;
+  margin-right: 13px;
+  margin-bottom: 1px;
 }
 
 .resdrop {
   @include span-columns(12);
   height: 100px;
 }
-
+.wrong_button {
+    color: white;
+  background-color: #477dca;
+  padding: 15px;
+  border-radius: 5px;
+  // margin-top: 10px;
+  line-height: 60px;
+}
 
 
 

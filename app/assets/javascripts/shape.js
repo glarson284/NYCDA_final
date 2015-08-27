@@ -44,10 +44,10 @@ interact('.draggable')
 function checkChildren() {
    if ( $('.draggable').children().length === 0 ) {
     console.log("greater than")
-     $('.button').css('display', 'initial');
+     $('.button').css('visibility', 'visible');
   } else {
     console.log("hits else")
-    $('.button').css('display', 'none');
+    $('.button').css('visibility', 'hidden');
   }
 }
 
@@ -145,7 +145,7 @@ interact(drop).dropzone({
         $('#check').click(function(){
           console.log(correct)
           if (correct === true) {
-            $('.button').css('display', 'initial');
+            $('.button').css('visibility', 'visible');
           }
           else {
             $('.wrong_button').css('display', 'initial');
@@ -289,7 +289,9 @@ $(function() {
      $('.ohm_def').css('display', 'none');
      });
 
-
+    $(".no_click").click(function(event){
+      event.preventDefault();
+    }); 
 
 
 })
