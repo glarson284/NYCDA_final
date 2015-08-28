@@ -19,12 +19,14 @@
 
 #outer-dropzone12 {
   @include outer-dropzone;
+  height: 80px;
   margin-top: 15px;
 }
 
 #outer-dropzone13 {
   @include outer-dropzone;
-  margin-top: 25%;
+  height: 80px;
+  margin-top: 22%;
 }
 #outer-dropzone14 {
    @include outer-dropzone;

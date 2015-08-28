@@ -55,27 +55,19 @@
   <div class="learning_first">
     <div class="init_text">
       <h2>Parallel</br>Circuit</h2>
-        An electronic circuit is a complete course of conductors through which current can travel. Circuits provide a path for current to flow. To be a circuit, this path must start and end at the same point. In other words, a circuit must form a loop.
+        A parallel circuit is a closed circuit in which the current divides into two or more paths before recombining to complete the circuit. It still uses the equation V=I*R, but needs to account for multiple resistors in parallel. So you use R = R1 + R2/R1 * R2. To find the total R, and then plug it in to the equation V=I*R.
       </p>
     </div>
     <div class="res_text">
       <h2>Resistors</br></h2>
       <p>
-        A resistor represents a given amount of resistance  
-        in a circuit. Resistance is a measure of how the flow 
-        of electric current is opposed or "resisted." It is 
-        defined by Ohm's law which says the resistance equals 
-        the voltage divided by the current. 
+        So you use R = R1 + R2 / R1 * R2. To find the total R, and then plug it in to the equation V=I*R.
       </p>
     </div>
     <div class="bat_text">
       <h2>Battery</br></h2>
       <p>
-        A battery represents a given amount of resistance 
-        in a circuit. Resistance is a measure of how the flow 
-        of electric current is opposed or "resisted." It is 
-        defined by Ohm's law which says the resistance equals 
-        the voltage divided by the current. 
+        The battery does not change and still represents the value of V. 
       </p>
     </div>
   </div>
@@ -95,9 +87,11 @@
 
     <div class="droppings">
       <div class="draggable drag-drop resistor">
+        <p>R1</p>
         <img src="/assets/resistor.png" >
       </div> 
       <div class="draggable drag-drop resistor">
+        <p>R2</p>
         <img src="/assets/resistor.png" >
       </div> 
       <div class="draggable drag-drop battery">

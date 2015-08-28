@@ -57,6 +57,9 @@ num = 0;
 num2 = 0;
 num3 = 1;
 ans = 0;
+
+
+
 interact(drop).dropzone({
   // only accept elements matching this CSS selector
   accept: classname, 
@@ -159,6 +162,10 @@ interact(drop).dropzone({
     ans = 0;
 
    }
+   event.target.classList.remove('res_dropzone_first');
+   event.target.classList.remove('res_dropzone_fifth');
+   event.target.classList.remove('res_dropzone_sixth');
+
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback

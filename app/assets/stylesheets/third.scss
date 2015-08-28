@@ -47,7 +47,7 @@
   // background-color: lightblue;
   border-radius: 20px;
   display: inline-block;
-  background-position: center 15%;
+  background-position: 50% 35%;
   
    // @include span-columns(12);  
   // padding-bottom: 20px;
@@ -72,6 +72,7 @@
   @include shift(1.5);
   @include span-columns(3);
   display: inline-block;
+
   // margin-left: 120px;
   // margin-top: 30px;
 }
@@ -93,7 +94,7 @@
 }
 #outer-dropzone11 {
   @include outer-dropzone;
-  margin-top: 45%;
+  margin-top: 48%;
   height: 130px;
 }
 
