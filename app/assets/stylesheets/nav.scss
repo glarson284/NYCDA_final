@@ -4,7 +4,8 @@ nav {
    // background: url("/assets/Line2.svg") no-repeat center center;
    margin: 0 auto;
    width: 100%;
-   margin-left: 30px;
+   margin-bottom: 30px;
+   text-align:center;
 
 }
 header {
@@ -46,12 +47,14 @@ nav img {
   margin: 0 10px 32px -8px;
 }
 .nav_res {
-  margin-left: -16px;
-  margin-bottom: 22px;
+  margin-bottom: -20px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .nav_bat {
-  margin-right: -1px;
-  margin-bottom: 1px;
+  margin-right: -9px;
+  margin-left: -8px;
+  margin-bottom: -42px;
 }
 .hr {
   // display: inline;
@@ -67,8 +70,8 @@ hr {
   height: 90px;
   width: 70px;
   margin-top: 10px;
-  margin-left: -16px;
-  margin-bottom: 22px;
+  margin-left: -24px;
+  margin-bottom: -19px;
 }
 #last_hr {
   width: 100px;
@@ -96,15 +99,15 @@ span {
 }
 #fourth_link {
   @include links;
-  left: 700px;
+  left: 750px;
 }
 #fifth_link {
   @include links;
-  left: 820px;
+  right: 350px;
 }
 #sixth_link {
   @include links;
-  left: 900px;
+  right: 150px;
 }
 
 

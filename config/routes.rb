@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get  "/parallel" => 'home#fourth'
   get  "/games1" => 'home#fifth'
   get  "/games2" => 'home#sixth'
+  get  "/final" => 'home#final'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

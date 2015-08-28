@@ -5,12 +5,15 @@
 }
 
 @mixin links {
-  position: absolute;
-  display: none;
-  top: 56px;
+  // position: absolute;
+  margin: 0;
+  padding: 0;
+  // display: none;
+  // top: 56px;
+  border-bottom: 5px solid #FF6E5F;
 }
 @mixin outer-dropzone2 {
-  height: 50px;
+  height: 70px;
   width: 135px;
 }
 @mixin outer-dropzone3 {

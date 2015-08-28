@@ -3,96 +3,133 @@
 @import "neat/neat";
 @import 'mixins';
 
-body {
+a.button{
+  color: white;
+  background-color: #477dca;
+  padding: 15px;
+  border-radius: 5px;
+  // margin-top: 10px;
+  line-height: 60px;
+  margin-right: 13px;
 
-  background: grey;
-  height: 900px;
-  width: 1450px;
+  visibility: hidden;
 }
-.info {
-  @include outer-container(100%);
+a.button_ohm {
+  color: white;
+  background-color: #477dca;
+  padding: 12px;
+  border-radius: 5px;
+  // margin-top: 10px;
+  line-height: 60px;
+  margin-right: 13px;
+  margin-bottom: 1px;
 }
 
-.clear {
+.resdrop {
+  @include span-columns(12);
   height: 100px;
 }
-.outer-dropzones{
-  background: url("/assets/circuit2-02.svg") no-repeat center center;
-  // background-size: cover;
-  width: 700px;
-  height: 550px;
-  margin: 0 auto;
-  background-size: 425px;
-  // background-color: lightblue;
-  border-radius: 20px;
-  display: inline-block;
-
-}
-.outer {
-  background-color: lightblue;
-  // width: 700px;
-  @include span-columns(6);
-  border-radius: 20px;
-  border: 5px solid white;
-  padding-bottom: 30px;
-}
-img {
-  width: 200px;
-  height: 100%;
-
+.wrong_button {
+    color: white;
+  background-color: #477dca;
+  padding: 15px;
+  border-radius: 5px;
+  // margin-top: 10px;
+  line-height: 60px;
 }
 
-#circ {
-  width: 50%;
-  // top: 50%;
-  left: 30%;
-  z-index: -1;
-}
-#outer-dropzone1 {
-  @include outer-dropzone;
-  margin-top: 5px;
-}
-#outer-dropzone2 {
-  @include outer-dropzone;
-  margin-top: 160px;
-}
-#outer-dropzone3 {
-  @include outer-dropzone;
-  margin-top: 145px;
-  height: 130px;
-}
 
-.res_dropzone, .battery_dropzone {
-  // position: absolute;
-  // background-color: #ccc;
-  border: dashed 4px transparent;
-  border-radius: 4px;
-  margin: 10px auto 30px auto;
-  padding: 10px;
-  width: 80%;
-  transition: background-color 0.3s;
-}
 
-.droppings {
-  background-color: lightgrey;
-  // margin: 0 auto;
-  border-radius: 10px;
-  width: 200px;
-  // position: absolute;
-  right: 60px;
-  top: 80px;
-  @include span-columns(2);
-  height: 500px;
-}
-#border {
-  height: 20px;
-  background-color: grey;
-}
-.learning {
-  @include shift(1);
-  @include span-columns(2);
-  height: 500px;
-  border-radius: 10px;
-  background-color: pink;
+// body {
 
-}
+//   background: grey;
+//   height: 900px;
+//   width: 1450px;
+// }
+// .info {
+//   @include outer-container(100%);
+// }
+
+// .clear {
+//   height: 100px;
+// }
+// .outer-dropzones{
+//   background: url("/assets/circuit2-02.svg") no-repeat center center;
+//   // background-size: cover;
+//   width: 700px;
+//   height: 550px;
+//   margin: 0 auto;
+//   background-size: 425px;
+//   // background-color: lightblue;
+//   border-radius: 20px;
+//   display: inline-block;
+
+// }
+// .outer {
+//   background-color: lightblue;
+//   // width: 700px;
+//   @include span-columns(6);
+//   border-radius: 20px;
+//   border: 5px solid white;
+//   padding-bottom: 30px;
+// }
+// img {
+//   width: 200px;
+//   height: 100%;
+
+// }
+
+// #circ {
+//   width: 50%;
+//   // top: 50%;
+//   left: 30%;
+//   z-index: -1;
+// }
+// #outer-dropzone1 {
+//   @include outer-dropzone;
+//   margin-top: 5px;
+// }
+// #outer-dropzone2 {
+//   @include outer-dropzone;
+//   margin-top: 160px;
+// }
+// #outer-dropzone3 {
+//   @include outer-dropzone;
+//   margin-top: 145px;
+//   height: 130px;
+// }
+
+// .res_dropzone, .battery_dropzone {
+//   // position: absolute;
+//   // background-color: #ccc;
+//   border: dashed 4px transparent;
+//   border-radius: 4px;
+//   margin: 10px auto 30px auto;
+//   padding: 10px;
+//   width: 80%;
+//   transition: background-color 0.3s;
+// }
+
+// .droppings {
+//   background-color: lightgrey;
+//   // margin: 0 auto;
+//   border-radius: 10px;
+//   width: 200px;
+//   // position: absolute;
+//   right: 60px;
+//   top: 80px;
+//   @include span-columns(2);
+//   height: 500px;
+// }
+// #border {
+//   height: 20px;
+//   background-color: grey;
+// }
+// .learning {
+//   @include shift(1);
+//   @include span-columns(2);
+//   height: 500px;
+//   border-radius: 10px;
+//   background-color: pink;
+
+// }
