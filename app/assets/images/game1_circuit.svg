@@ -4,6 +4,10 @@
 	 viewBox="0 0 446.5 303" style="enable-background:new 0 0 446.5 303;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#ADF05A;}
+	.st2{font-family:'CapitalsRegular';}
+	.st3{font-size:15.8479px;}
+	.st4{font-size:15.8362px;}
 </style>
 <line class="st0" x1="443.5" y1="3" x2="443.5" y2="255.4"/>
 <line class="st0" x1="3" y1="3" x2="3" y2="255.4"/>
@@ -15,4 +19,14 @@
 <line class="st0" x1="443" y1="3" x2="403.3" y2="3"/>
 <image style="overflow:visible;" width="313" height="200" xlink:href="bat_pos_right copy.png"  transform="matrix(0.4341 0 0 0.4469 155.7562 213.5913)">
 </image>
+<path class="st1" d="M335.3,77.7h-50.4c-8.2,0-14.9,4-14.9,8.8c0,4.9,6.7,8.8,14.9,8.8h35.5v77.6H114.3V95.3H193l-24.2,14.4
+	c-5.8,3.5-5.8,9,0,12.5c2.9,1.7,6.7,2.6,10.5,2.6s7.6-0.9,10.5-2.6l49.6-29.5c2.8-1.7,4.4-3.9,4.4-6.3c0-2.3-1.6-4.6-4.4-6.3
+	l-49.6-29.5c-5.8-3.5-15.2-3.5-21.1,0c-5.8,3.5-5.8,9,0,12.5l24.2,14.4H99.3c-8.2,0-14.9,4-14.9,8.8v95.2c0,4.9,6.7,8.8,14.9,8.8
+	h235.9c8.2,0,14.9-4,14.9-8.8V86.3C350.2,81.7,343.5,77.7,335.3,77.7z"/>
+<text transform="matrix(0.9897 0 0 1 96.8281 245.1094)" class="st1 st2 st3">V=4.5V</text>
+<text transform="matrix(0.9859 0 0 1 239.9521 117.1431)" class="st1 st2 st4">I=.5A</text>
+<rect width="3" height="3"/>
+<rect x="442.6" width="3.9" height="3"/>
+<rect x="442.6" y="255.4" width="3.9" height="6"/>
+<rect x="0" y="255.4" width="3.9" height="6"/>
 </svg>

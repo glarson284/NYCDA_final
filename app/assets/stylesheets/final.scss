@@ -1,0 +1,28 @@
+.tent {
+  background: url("/assets/circuitcircus.png") no-repeat center;
+  width: 100vw;
+  height: 100vh;
+  background-size: 56%;
+  text-align: center;
+
+}
+.tent h1 {
+  font-size: 60px;
+  color: black;
+  margin-bottom: 0;
+  
+  
+}
+.tent p {
+  margin-top: 0px;
+}
+.congrats {
+  // background: rgba(255,255,255,.70);
+  color: black;
+  width: 500px;
+  margin: 0 auto;
+  // padding: 10px;
+  border-radius: 5px;
+    -webkit-box-shadow: 0 0 30px white;
+        box-shadow: 0 0 30px white;
+}
