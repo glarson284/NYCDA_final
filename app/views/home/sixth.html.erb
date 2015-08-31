@@ -1,94 +1,96 @@
-<header><h3>Circuit Circus</h3></header>
-<nav>
-  <a href="/">
-    <span id="home_link">Home</span>
-    <img src="/assets/bat_pos_right.png" class="nav_bat">
-    
-  </a>
-    <!-- <hr id="first_hr"> -->
-  <a href="/whatisacircuit">
-    <span id="first_link">Circuit</span>
-    <img src="/assets/resistor.png" class="nav_res">
-    
-  </a>
-    <!-- <hr class="hr"> -->
-  <a href="/ohm">
-    <span id="second_link">Ohm's Law</span>
-    <img src="/assets/resistor.png" class="nav_res">
-    
-  </a> 
-    <!-- <hr class="hr"> -->
-  <a href="/series">
-    <span id="third_link">Series</span>
-    <img src="/assets/resistor.png" class="nav_res">
-    
-  </a> 
-    <!-- <hr class="hr"> -->
-  <a href="/parallel">
-    <span id="fourth_link">Parallel</span>
-    <img src="/assets/resistor.png" class="nav_res">
-    
-  </a>  
-    <!-- <hr class="hr"> -->
-  <a href="/games1">
-    <span id="fifth_link">Game 1</span>
-    <img src="/assets/resistor.png" class="nav_res">
-    
-  </a>  
-    <!-- <hr class="hr"> -->
-  <a href="/games2">
-    <span id="sixth_link">Game 2</span>
-    <img src="/assets/resistor.png" class="nav_res"> 
-  </a>  
+<div class="body">
+  <header><h3>Circuit Circus</h3></header>
+  <nav>
+    <a href="/">
+      <span id="home_link">Home</span>
+      <img src="/assets/bat_pos_right.png" class="nav_bat">
+      
+    </a>
+      <!-- <hr id="first_hr"> -->
+    <a href="/whatisacircuit">
+      <span id="first_link">Circuit</span>
+      <img src="/assets/resistor.png" class="nav_res">
+      
+    </a>
+      <!-- <hr class="hr"> -->
+    <a href="/ohm">
+      <span id="second_link">Ohm's Law</span>
+      <img src="/assets/resistor.png" class="nav_res">
+      
+    </a> 
+      <!-- <hr class="hr"> -->
+    <a href="/series">
+      <span id="third_link">Series</span>
+      <img src="/assets/resistor.png" class="nav_res">
+      
+    </a> 
+      <!-- <hr class="hr"> -->
+    <a href="/parallel">
+      <span id="fourth_link">Parallel</span>
+      <img src="/assets/resistor.png" class="nav_res">
+      
+    </a>  
+      <!-- <hr class="hr"> -->
+    <a href="/games1">
+      <span id="fifth_link">Game 1</span>
+      <img src="/assets/resistor.png" class="nav_res">
+      
+    </a>  
+      <!-- <hr class="hr"> -->
+    <a href="/games2">
+      <span id="sixth_link">Game 2</span>
+      <img src="/assets/resistor.png" class="nav_res"> 
+    </a>  
 
-  <img src="/assets/lightbulb.png" id="lightbulb_off"> 
-</nav>
-<div class="clear"></div>
-<div class="info">
-  <div class="learning_first">
-    <div class="init_text">
-      <h2>Parallel</br>Circuit</h2>
-        <p>Solve the series circuit! Remember, V = I * R and for a series
-        circuit R = R1 + R2 + R3 / R1 * R2 * R3</p>
-    </div>
-  </div>
-    <div class="outer_sixth">
-      <h2>Parallel Circuit</h2>
-      <div class="outer-dropzones_sixth">
-        
-        <div id="outer-dropzone19" class="res_dropzone_sixth">
-        </div>
-        <div id="outer-dropzone20" class="res_dropzone_sixth">
-        </div>
-        <div id="outer-dropzone21" class="res_dropzone_sixth">
-        </div>
+    <img src="/assets/lightbulb.png" id="lightbulb_off"> 
+  </nav>
+  <div class="clear"></div>
+  <div class="info">
+    <div class="learning_first">
+      <div class="init_text">
+        <h2>Parallel</br>Circuit</h2>
+          <p>Solve the series circuit! Remember, V = I * R and for a series
+          circuit R = R1 * R2 * R3/R1 + R2 + R3 </p>
       </div>
-        <%= link_to "Correct!", final_path, :class=>"button" %>
-        <%= link_to "Try Again", games2_path, :class=>"wrong_button" %>
-        <button id="check">Check Answer</button>
     </div>
+      <div class="outer_sixth">
+        <h2>Parallel Circuit</h2>
+        <div class="outer-dropzones_sixth">
+          
+          <div id="outer-dropzone19" class="res_dropzone_sixth">
+          </div>
+          <div id="outer-dropzone20" class="res_dropzone_sixth">
+          </div>
+          <div id="outer-dropzone21" class="res_dropzone_sixth">
+          </div>
+        </div>
+          <%= link_to "Correct!", final_path, :class=>"button" %>
+          <%= link_to "Try Again", games2_path, :class=>"wrong_button" %>
+          <button id="check">Check Answer</button>
+      </div>
 
-    <div class="droppings">
-    <div class="draggable drag-drop resistor_p series_res" data-score="1">
-      <p>1&Omega;</p>
-      <img src="/assets/resistor.png">
-    </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="2">
-      <p>2&Omega;</p>
-      <img src="/assets/resistor.png"> 
-    </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="4">
-      <p>4&Omega;</p>
-      <img src="/assets/resistor.png" >
-    </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="5">
-      <p>5&Omega;</p>
-      <img src="/assets/resistor.png" >
-    </div> 
-    <div class="draggable drag-drop resistor_p series_res" data-score="6">
-      <p>6&Omega;</p>
-      <img src="/assets/resistor.png" >
-    </div> 
+      <div class="droppings">
+      <div class="draggable drag-drop resistor_p series_res" data-score="1">
+        <p>1&Omega;</p>
+        <img src="/assets/resistor.png">
+      </div> 
+      <div class="draggable drag-drop resistor_p series_res" data-score="2">
+        <p>2&Omega;</p>
+        <img src="/assets/resistor.png"> 
+      </div> 
+      <div class="draggable drag-drop resistor_p series_res" data-score="4">
+        <p>4&Omega;</p>
+        <img src="/assets/resistor.png" >
+      </div> 
+      <div class="draggable drag-drop resistor_p series_res" data-score="5">
+        <p>5&Omega;</p>
+        <img src="/assets/resistor.png" >
+      </div> 
+      <div class="draggable drag-drop resistor_p series_res" data-score="6">
+        <p>6&Omega;</p>
+        <img src="/assets/resistor.png" >
+      </div> 
+    </div>
   </div>
 </div>
 

@@ -1,118 +1,120 @@
-<header><h3>Circuit Circus</h3></header>
-<nav>
-  <a href="/">
-    <span id="home_link">Home</span>
-  </a>
-    <!-- <img src="/assets/bat_pos_right.png" class="nav_bat"> -->
-    <%= image_tag("bat_pos_right.png", class: "nav_bat") %>
-  
-    <!-- <hr id="first_hr"> -->
-  <a href="/whatisacircuit">
-    <span id="first_link">Circuit</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res"> -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
-  
-    <!-- <hr class="hr"> -->
-  <a href="/ohm">
-    <span id="second_link">Ohm's Law</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res"> -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
-   
-    <!-- <hr class="hr"> -->
-  <a href="/series">
-    <span id="third_link">Series</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res"> -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
-   
-    <!-- <hr class="hr"> -->
-  <a href="/parallel" class="no_click">
-    <span id="fourth_link" style="visibility: hidden">Parallel</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res"> -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
+<div class="body">
+  <header><h3>Circuit Circus</h3></header>
+  <nav>
+    <a href="/">
+      <span id="home_link">Home</span>
+    </a>
+      <!-- <img src="/assets/bat_pos_right.png" class="nav_bat"> -->
+      <%= image_tag("bat_pos_right.png", class: "nav_bat") %>
     
-    <!-- <hr class="hr"> -->
-  <a href="/games1" class="no_click">
-    <span id="fifth_link" style="visibility: hidden">Game 1</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res"> -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
+      <!-- <hr id="first_hr"> -->
+    <a href="/whatisacircuit">
+      <span id="first_link">Circuit</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res"> -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
     
-    <!-- <hr class="hr"> -->
-  <a href="/games2" class="no_click">
-    <span id="sixth_link" style="visibility: hidden">Game 2</span>
-  </a>
-    <!-- <img src="/assets/resistor.png" class="nav_res">  -->
-    <%= image_tag("resistor.png", class: "nav_res") %>
-
-  <!-- <img src="/assets/lightbulb.png" id="lightbulb_off">  -->
-  <%= image_tag("lightbulb.png", id: "lightbulb_off") %>
-</nav>
-<div class="clear"></div>
-<div class="info">
-  <div class="learning_first">
-    <div class="init_text">
-      <h2>Series</br>Circuit</h2>
-        A series circuit is a closed circuit in which the current follows one path. It still uses the equation V=I*R, but needs to account for multiple resistors. So you use R = R1 + R2 + R3. To find the total R, and then plug it in to the equation V=I*R.
-      </p>
-    </div>
-    <div class="res_text">
-      <h2>Resistors</br></h2>
-      <p>
-        So you use R = R1 + R2 + R3. To find the total R, and then plug it in to the equation V=I*R.
-      </p>
-      </p>
-    </div>
-    <div class="bat_text">
-      <h2>Battery</br></h2>
-      <p>
-        The battery does not change and still represents the value of V. 
-      </p>
-    </div>
-  </div>
-  <div class="outer_third">
-    <h2>Series Circuit</h2>
-    <div class="outer-dropzones_third">
-      <div class="resdrop">
-        <div id="outer-dropzone8" class="res_dropzone_first">
-        </div>
-        <div id="outer-dropzone9" class="res_dropzone_first">
-        </div>
-        <div id="outer-dropzone10" class="res_dropzone_first">
-        </div>
-        </div>
-        <div id="outer-dropzone11" class="battery_dropzone_first">
-        
-      </div>
+      <!-- <hr class="hr"> -->
+    <a href="/ohm">
+      <span id="second_link">Ohm's Law</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res"> -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
      
+      <!-- <hr class="hr"> -->
+    <a href="/series">
+      <span id="third_link">Series</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res"> -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
+     
+      <!-- <hr class="hr"> -->
+    <a href="/parallel" class="no_click">
+      <span id="fourth_link" style="visibility: hidden">Parallel</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res"> -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
+      
+      <!-- <hr class="hr"> -->
+    <a href="/games1" class="no_click">
+      <span id="fifth_link" style="visibility: hidden">Game 1</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res"> -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
+      
+      <!-- <hr class="hr"> -->
+    <a href="/games2" class="no_click">
+      <span id="sixth_link" style="visibility: hidden">Game 2</span>
+    </a>
+      <!-- <img src="/assets/resistor.png" class="nav_res">  -->
+      <%= image_tag("resistor.png", class: "nav_res") %>
+
+    <!-- <img src="/assets/lightbulb.png" id="lightbulb_off">  -->
+    <%= image_tag("lightbulb.png", id: "lightbulb_off") %>
+  </nav>
+  <div class="clear"></div>
+  <div class="info">
+    <div class="learning_first">
+      <div class="init_text">
+        <h2>Series</br>Circuit</h2>
+          A series circuit is a closed circuit in which the current follows one path. It still uses the equation V=I*R, but needs to account for multiple resistors. So you use R = R1 + R2 + R3. To find the total R, and then plug it in to the equation V=I*R.
+        </p>
+      </div>
+      <div class="res_text">
+        <h2>Resistors</br></h2>
+        <p>
+          So you use R = R1 + R2 + R3. To find the total R, and then plug it in to the equation V=I*R.
+        </p>
+        </p>
+      </div>
+      <div class="bat_text">
+        <h2>Battery</br></h2>
+        <p>
+          The battery does not change and still represents the value of V. 
+        </p>
+      </div>
     </div>
-     <%= link_to "Continue", parallel_path, {:class=>"button"} %>
+    <div class="outer_third">
+      <h2>Series Circuit</h2>
+      <div class="outer-dropzones_third">
+        <div class="resdrop">
+          <div id="outer-dropzone8" class="res_dropzone_first">
+          </div>
+          <div id="outer-dropzone9" class="res_dropzone_first">
+          </div>
+          <div id="outer-dropzone10" class="res_dropzone_first">
+          </div>
+          </div>
+          <div id="outer-dropzone11" class="battery_dropzone_first">
+          
+        </div>
+       
+      </div>
+       <%= link_to "Continue", parallel_path, {:class=>"button"} %>
 
-  </div>
+    </div>
 
-  <div class="droppings">
-    <div class="draggable drag-drop resistor series_res">
-      <p>R1</p>
-      <!-- <img src="/assets/resistor.png" > -->
-      <%= image_tag("resistor.png") %>
-    </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <p>R2</p>
-      <!-- <img src="/assets/resistor.png" > -->
-      <%= image_tag("resistor.png") %>
-    </div> 
-    <div class="draggable drag-drop resistor series_res">
-      <p>R3</p>
-      <!-- <img src="/assets/resistor.png" > -->
-      <%= image_tag("resistor.png") %>
-    </div> 
+    <div class="droppings">
+      <div class="draggable drag-drop resistor series_res">
+        <p>R1</p>
+        <!-- <img src="/assets/resistor.png" > -->
+        <%= image_tag("resistor.png") %>
+      </div> 
+      <div class="draggable drag-drop resistor series_res">
+        <p>R2</p>
+        <!-- <img src="/assets/resistor.png" > -->
+        <%= image_tag("resistor.png") %>
+      </div> 
+      <div class="draggable drag-drop resistor series_res">
+        <p>R3</p>
+        <!-- <img src="/assets/resistor.png" > -->
+        <%= image_tag("resistor.png") %>
+      </div> 
 
-    <div id="yes-drop" class="draggable drag-drop battery">
-      <!-- <img src="/assets/bat_pos_left.png"> -->
-      <%= image_tag("bat_pos_left.png") %>
+      <div id="yes-drop" class="draggable drag-drop battery">
+        <!-- <img src="/assets/bat_pos_left.png"> -->
+        <%= image_tag("bat_pos_left.png") %>
+      </div>
     </div>
   </div>
 </div>
