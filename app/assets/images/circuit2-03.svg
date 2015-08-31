@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-338 169.2 446.5 557" style="enable-background:new -338 169.2 446.5 557;" xml:space="preserve">
+	 viewBox="-594 172.2 446.5 556" style="enable-background:new -594 172.2 446.5 556;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
 	.st1{fill:#ADF05A;}
@@ -9,26 +9,26 @@
 	.st3{font-size:15.8479px;}
 	.st4{font-size:15.8362px;}
 </style>
-<line class="st0" x1="105.5" y1="171.6" x2="105.5" y2="424"/>
-<line class="st0" x1="-335" y1="171.6" x2="-335" y2="424"/>
-<line class="st0" x1="105.5" y1="424" x2="105.5" y2="676.5"/>
-<line class="st0" x1="-335" y1="424" x2="-335" y2="676.5"/>
-<line class="st0" x1="-52.1" y1="677.1" x2="105" y2="677.1"/>
-<line class="st0" x1="-335" y1="677.5" x2="-184.5" y2="677.5"/>
-<line class="st0" x1="-166.2" y1="173.2" x2="-335" y2="173.2"/>
-<image style="overflow:visible;" width="313" height="200" xlink:href="bat_pos_right copy.png"  transform="matrix(0.4638 0 0 0.4854 -190.1769 629.1)">
+<line class="st0" x1="-150.5" y1="173.6" x2="-150.5" y2="426"/>
+<line class="st0" x1="-591" y1="173.6" x2="-591" y2="426"/>
+<line class="st0" x1="-150.5" y1="426" x2="-150.5" y2="678.5"/>
+<line class="st0" x1="-591" y1="426" x2="-591" y2="678.5"/>
+<line class="st0" x1="-308.1" y1="679.1" x2="-151" y2="679.1"/>
+<line class="st0" x1="-591" y1="679.5" x2="-440.5" y2="679.5"/>
+<line class="st0" x1="-422.2" y1="175.2" x2="-591" y2="175.2"/>
+<image style="overflow:visible;enable-background:new    ;" width="313" height="200" xlink:href="bat_pos_right copy.png"  transform="matrix(0.4638 0 0 0.4854 -446.1769 631.1)">
 </image>
-<path class="st1" d="M3.3,476.3h-50.4c-8.2,0-14.9,4-14.9,8.8c0,4.9,6.7,8.8,14.9,8.8h35.5v77.6h-206.1v-77.6h78.7l-24.2,14.4
+<path class="st1" d="M-252.7,478.3h-50.4c-8.2,0-14.9,4-14.9,8.8c0,4.9,6.7,8.8,14.9,8.8h35.5v77.6h-206.1v-77.6h78.7l-24.2,14.4
 	c-5.8,3.5-5.8,9,0,12.5c2.9,1.7,6.7,2.6,10.5,2.6s7.6-0.9,10.5-2.6l49.6-29.5c2.8-1.7,4.4-3.9,4.4-6.3c0-2.3-1.6-4.6-4.4-6.3
 	l-49.6-29.5c-5.8-3.5-15.2-3.5-21.1,0c-5.8,3.5-5.8,9,0,12.5l24.2,14.4h-93.6c-8.2,0-14.9,4-14.9,8.8v95.2c0,4.9,6.7,8.8,14.9,8.8
-	H3.2c8.2,0,14.9-4,14.9-8.8v-95.2C18.2,480.3,11.5,476.3,3.3,476.3z"/>
-<text transform="matrix(0.9897 0 0 1 -235.2144 643.6877)" class="st1 st2 st3">V=8V</text>
-<text transform="matrix(0.9859 0 0 1 -92.0904 515.7214)" class="st1 st2 st4">I=2A</text>
-<line class="st0" x1="102.5" y1="173.2" x2="-66.3" y2="173.2"/>
-<line class="st0" x1="-169.2" y1="288.1" x2="-338" y2="288.1"/>
-<line class="st0" x1="102.5" y1="288.1" x2="-66.3" y2="288.1"/>
-<line class="st0" x1="-169.2" y1="423.1" x2="-338" y2="423.1"/>
-<line class="st0" x1="102.5" y1="423.1" x2="-66.3" y2="423.1"/>
-<line class="st0" x1="-166.2" y1="173.2" x2="-335" y2="173.2"/>
-<line class="st0" x1="105.5" y1="173.2" x2="-63.3" y2="173.2"/>
+	h235.9c8.2,0,14.9-4,14.9-8.8v-95.2C-237.8,482.3-244.5,478.3-252.7,478.3z"/>
+<text transform="matrix(0.9897 0 0 1 -492.2144 645.6875)" class="st1 st2 st3">V=4V</text>
+<text transform="matrix(0.9859 0 0 1 -348.0903 517.7217)" class="st1 st2 st4">I=2A</text>
+<line class="st0" x1="-153.5" y1="175.2" x2="-322.3" y2="175.2"/>
+<line class="st0" x1="-425.2" y1="290.1" x2="-594" y2="290.1"/>
+<line class="st0" x1="-153.5" y1="290.1" x2="-322.3" y2="290.1"/>
+<line class="st0" x1="-425.2" y1="425.1" x2="-594" y2="425.1"/>
+<line class="st0" x1="-153.5" y1="425.1" x2="-322.3" y2="425.1"/>
+<line class="st0" x1="-422.2" y1="175.2" x2="-591" y2="175.2"/>
+<line class="st0" x1="-150.5" y1="175.2" x2="-319.3" y2="175.2"/>
 </svg>

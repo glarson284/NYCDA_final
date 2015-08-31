@@ -101,8 +101,9 @@ interact(drop).dropzone({
         id = $(this).data("score");
         
         function sum() {
+            id = 1 / id
             num2 += id;
-            // console.log(num2);
+            console.log(num2);
           }
         function product() {
            num3 = num3 * id;
@@ -111,8 +112,8 @@ interact(drop).dropzone({
         if (id) {
           sum();
           product();
-          // console.log(id);
-          ans = num3 / num2;
+          console.log(ans);
+          ans = 1 / num2;
           console.log(ans);
         }  
       });
@@ -131,7 +132,7 @@ interact(drop).dropzone({
 
         if (num === 9) {  
           correct = true;
-        } else if (ans === 4){
+        } else if (ans === 2){
           correct = true;
         }
         else {
