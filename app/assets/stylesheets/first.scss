@@ -160,6 +160,31 @@ img {
 }
 
 
+@media (max-width: 1200px) {
+  .learning_first {
+  // @include shift(1);
+  @include shift(1);
+  @include span-columns(10);
+  // margin-left: 50px;
+  height: 240px;
+  text-align: center;
+}
+.outer {
+  @include shift(1);
+  @include span-columns(10);
+  // padding-bottom: 30px;
+  margin-top: 5px;
+}
+.droppings {
+  @include shift(1);
+  @include span-columns(10);
+  height: 200px;
+  margin-top: 5px;
+}
+
+  }
+
+
 
 
 

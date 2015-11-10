@@ -103,8 +103,18 @@
 
 
 
-
-
+@media (max-width: 1200px) {
+.outer_third {
+  @include shift(1);
+  @include span-columns(10);
+}
+.series_res {
+  width: 27%
+}
+.battery{
+  width: 27%;
+}
+}
 
 
 

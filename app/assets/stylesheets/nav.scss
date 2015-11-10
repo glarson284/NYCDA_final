@@ -25,18 +25,7 @@ header h3 {
 
 }
 
-.circle {
-    width: 30px;
-    height: 30px;
-    background: grey;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 20px 50px;
-}
-.circles {
-   margin: 0 auto;
-   width: 800px;
-}
+
 nav img {
   width: 100px;
 }
@@ -110,7 +99,19 @@ span {
   right: 150px;
 }
 
+@media (max-width: 1200px) {
+  nav {
+   // background: url("/assets/Line2.svg") no-repeat center center;
+   margin: 0 auto;
+   // width: 80%;
+   margin-bottom: 30px;
+   text-align:center;
+   img {
+    width: 100px;
+   }
+}
 
+}
 
 
 
